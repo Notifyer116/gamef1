@@ -1,0 +1,7 @@
+F1-Manager-Handoff/Build/
+F1-Manager-Handoff/Checks/
+**/Saves/
+**/crash.log
+**/*.exe.mdb
+
+dist/

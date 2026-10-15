@@ -1,0 +1,151 @@
+F1 Manager Desktop Career 2.1
+
+Build: Mono C# 6.12, PE32+ x64 Windows Forms executable.
+Validation host: Debian 13, Mono 6.12, Xvfb 1600x1100.
+Native Windows execution and Build.ps1 were not tested on this Linux host.
+No tests skipped or disabled.
+SHA-256: 2ef848a78fd3cea8e7767b8c180728dd3e8ed6f47d67e0a5ef493d186883e317
+
+Gameplay / save / career checks:
+PASS custom 12th team with two drivers
+PASS four management roles and two race engineers per team
+PASS 15 distinct components; no generic engine upgrade
+PASS initial 10 engineers and two slots
+PASS engineer allocation changes risk, speed and price
+PASS development slot and workforce limits enforced
+PASS development does not install instantly
+PASS projects and workforce survive JSON round trip
+PASS projects settle after their manufacturing dates
+PASS parts install or fail validation
+PASS facilities and staff quality reduce failure probability
+PASS engineering department increases engineer capacity after construction
+PASS works team cannot choose another engine
+PASS works engine upgrade in preseason
+PASS one factory engine programme per year
+PASS no engine development during season or session
+PASS next-season reservation does not change current staff
+PASS duplicate booking prevented
+PASS salary demand rejects insufficient offers
+PASS contract dismissal fee calculated
+PASS chemistry develops gradually, not full after three rounds
+PASS long-term partnership builds high chemistry
+PASS underlying lap engine preserves simulated seconds
+PASS lap times generated as cars complete laps
+PASS practice tyre wear has fractional progression
+PASS active session survives save/load
+PASS weather change emits an event for the session log
+PASS safety car restart emits an event for the session log
+PASS Q1/Q2/Q3 form complete 24-car grid
+PASS manual pit command executes at end of lap
+PASS full race archived with every driver
+PASS race points allocation valid with DNFs
+PASS instant practice produces a complete classification in one call
+PASS instant practice has no real-time wait
+PASS different strategies for both drivers survive save/load
+PASS unordered pit laps rejected
+PASS single-compound dry Grand Prix rejected
+PASS unknown tyre compound rejected
+PASS instant race executes each driver's selected pit schedule
+PASS instant race advances round and archives all results
+PASS sprint uses its own distance and selected starting tyre
+PASS sprint plans do not leak into the Grand Prix
+PASS instant weather change is simulated
+PASS engineer automatically changes player tyres after rain begins
+PASS weather and safety events do not block instant completion
+PASS version 2 active saves migrate planned pit counters
+PASS old paused session can be completed instantly
+PASS embedded portrait for Lando Norris
+PASS embedded portrait for Oscar Piastri
+PASS embedded portrait for Charles Leclerc
+PASS embedded portrait for Lewis Hamilton
+PASS embedded portrait for Max Verstappen
+PASS embedded portrait for Isack Hadjar
+PASS embedded portrait for George Russell
+PASS embedded portrait for Kimi Antonelli
+PASS embedded portrait for Fernando Alonso
+PASS embedded portrait for Lance Stroll
+PASS embedded portrait for Pierre Gasly
+PASS embedded portrait for Franco Colapinto
+PASS embedded portrait for Esteban Ocon
+PASS embedded portrait for Oliver Bearman
+PASS embedded portrait for Liam Lawson
+PASS embedded portrait for Arvid Lindblad
+PASS embedded portrait for Carlos Sainz
+PASS embedded portrait for Alexander Albon
+PASS embedded portrait for Nico Hulkenberg
+PASS embedded portrait for Gabriel Bortoleto
+PASS embedded portrait for Sergio Perez
+PASS embedded portrait for Valtteri Bottas
+PASS full season completes and hall of fame records champions
+PASS six complete sprint weekends
+PASS future staff booking activates at season rollover
+PASS second season resets schedule and opens preseason
+PASS all teams retain two drivers in season 2026
+PASS retirement age bounded in season 2026
+PASS all teams retain two drivers in season 2027
+PASS retirement age bounded in season 2027
+PASS all teams retain two drivers in season 2028
+PASS retirement age bounded in season 2028
+PASS all teams retain two drivers in season 2029
+PASS retirement age bounded in season 2029
+PASS all teams retain two drivers in season 2030
+PASS retirement age bounded in season 2030
+PASS all teams retain two drivers in season 2031
+PASS retirement age bounded in season 2031
+PASS all teams retain two drivers in season 2032
+PASS retirement age bounded in season 2032
+PASS all teams retain two drivers in season 2033
+PASS retirement age bounded in season 2033
+PASS all teams retain two drivers in season 2034
+PASS retirement age bounded in season 2034
+PASS all teams retain two drivers in season 2035
+PASS retirement age bounded in season 2035
+PASS all teams retain two drivers in season 2036
+PASS retirement age bounded in season 2036
+PASS all teams retain two drivers in season 2037
+PASS retirement age bounded in season 2037
+PASS 12-season career preserves every championship and race
+PASS retirement and new generations work across years
+PASS driver and constructor points agree
+PASS atomic disk save, backup and reload
+PASS malformed saves rejected
+
+102 checks passed in 15.7 seconds.
+
+UI / modal workflow checks:
+PASS all eleven application pages render at 1440 px
+PASS portrait decodes: Lando Norris
+PASS portrait decodes: Oscar Piastri
+PASS portrait decodes: Charles Leclerc
+PASS portrait decodes: Lewis Hamilton
+PASS portrait decodes: Max Verstappen
+PASS portrait decodes: Isack Hadjar
+PASS portrait decodes: George Russell
+PASS portrait decodes: Kimi Antonelli
+PASS portrait decodes: Fernando Alonso
+PASS portrait decodes: Lance Stroll
+PASS portrait decodes: Pierre Gasly
+PASS portrait decodes: Franco Colapinto
+PASS portrait decodes: Esteban Ocon
+PASS portrait decodes: Oliver Bearman
+PASS portrait decodes: Liam Lawson
+PASS portrait decodes: Arvid Lindblad
+PASS portrait decodes: Carlos Sainz
+PASS portrait decodes: Alexander Albon
+PASS portrait decodes: Nico Hulkenberg
+PASS portrait decodes: Gabriel Bortoleto
+PASS portrait decodes: Sergio Perez
+PASS portrait decodes: Valtteri Bottas
+PASS people and weekend render at 1120 px
+PASS instant practice still displays animated modal for at least 1.1 s
+PASS simulation modal commits a completed practice
+PASS simulation animation frames differ
+PASS closing strategy selection leaves career and session unchanged
+PASS pre-race window has independent controls and portraits for both drivers
+PASS confirming both strategies starts and completes the race
+PASS completed race persisted to disk
+PASS sprint strategy selection also gates instant simulation
+PASS final-race animation completes safely after season rollover
+PASS season-complete page renders with final race results
+
+34 UI checks passed under Mono/Xvfb; Windows native execution still requires a Windows host.

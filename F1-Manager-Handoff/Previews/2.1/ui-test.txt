@@ -1,0 +1,36 @@
+PASS all eleven application pages render at 1440 px
+PASS portrait decodes: Lando Norris
+PASS portrait decodes: Oscar Piastri
+PASS portrait decodes: Charles Leclerc
+PASS portrait decodes: Lewis Hamilton
+PASS portrait decodes: Max Verstappen
+PASS portrait decodes: Isack Hadjar
+PASS portrait decodes: George Russell
+PASS portrait decodes: Kimi Antonelli
+PASS portrait decodes: Fernando Alonso
+PASS portrait decodes: Lance Stroll
+PASS portrait decodes: Pierre Gasly
+PASS portrait decodes: Franco Colapinto
+PASS portrait decodes: Esteban Ocon
+PASS portrait decodes: Oliver Bearman
+PASS portrait decodes: Liam Lawson
+PASS portrait decodes: Arvid Lindblad
+PASS portrait decodes: Carlos Sainz
+PASS portrait decodes: Alexander Albon
+PASS portrait decodes: Nico Hulkenberg
+PASS portrait decodes: Gabriel Bortoleto
+PASS portrait decodes: Sergio Perez
+PASS portrait decodes: Valtteri Bottas
+PASS people and weekend render at 1120 px
+PASS instant practice still displays animated modal for at least 1.1 s
+PASS simulation modal commits a completed practice
+PASS simulation animation frames differ
+PASS closing strategy selection leaves career and session unchanged
+PASS pre-race window has independent controls and portraits for both drivers
+PASS confirming both strategies starts and completes the race
+PASS completed race persisted to disk
+PASS sprint strategy selection also gates instant simulation
+PASS final-race animation completes safely after season rollover
+PASS season-complete page renders with final race results
+
+34 UI checks passed under Mono/Xvfb; Windows native execution still requires a Windows host.
