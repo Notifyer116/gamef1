@@ -1,0 +1,14 @@
+{
+  "source": "User supplied gemini_generated_video_95978ab4.mp4",
+  "source_sha256": "736b1cf30829c224101afce856376da9a2a307331707cde38b026e115cfb42c9",
+  "trim_seconds": [
+    0,
+    3.5
+  ],
+  "fps": 60,
+  "frames": 210,
+  "audio": false,
+  "processing": "ffmpeg minterpolate=mci:aobmc:vsbmc, H.264 CRF 20; JPEG frame pack q=5",
+  "video_sha256": "8af992ab3efc15ce4ae336eb06db9dafcac6ffac6e05df8413213b38008be867",
+  "frames_sha256": "2a47b6550a5b4c9d7bbe19ace00bc356b3991f08b0997c0fd93ba06174e1f419"
+}
