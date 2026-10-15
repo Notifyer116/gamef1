@@ -27,8 +27,7 @@ Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\teams') -Filter '*.png
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\teams\credits.json') + ',teamcredits')
 Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\tyres') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',tyre' + $_.BaseName) }
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\tyres\credits.json') + ',tyrecredits')
-$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\transition\session.frames') + ',sessiontransition')
-foreach ($taskFile in @('Models.cs','Data.cs','CarModel.cs','Research.cs','EngineeringTests.cs','ResearchTests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','FrameClock.cs','SessionVideo.cs','SliderInput.cs','DevelopmentUI.cs','ContractUI.cs','Presentations.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
+foreach ($taskFile in @('Models.cs','Data.cs','CarModel.cs','Research.cs','EngineeringTests.cs','ResearchTests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','FrameClock.cs','SliderInput.cs','DevelopmentUI.cs','ContractUI.cs','Presentations.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @taskArgs
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed' }
 Write-Output ('Built: ' + (Join-Path $taskOutput 'F1Manager.exe'))
