@@ -27,7 +27,7 @@ Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\teams') -Filter '*.png
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\teams\credits.json') + ',teamcredits')
 Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\tyres') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',tyre' + $_.BaseName) }
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\tyres\credits.json') + ',tyrecredits')
-foreach ($taskFile in @('Models.cs','Data.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
+foreach ($taskFile in @('Models.cs','Data.cs','CarModel.cs','EngineeringTests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','SliderInput.cs','DevelopmentUI.cs','Presentations.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @taskArgs
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed' }
 Write-Output ('Built: ' + (Join-Path $taskOutput 'F1Manager.exe'))
