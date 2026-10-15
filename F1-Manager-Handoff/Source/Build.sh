@@ -11,7 +11,7 @@ if [[ -n "${MONO_ROOT:-}" ]]; then
   export LD_LIBRARY_PATH="$MONO_ROOT/usr/lib:$MONO_ROOT/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
   compiler=("$MONO_ROOT/usr/bin/mono-sgen" "$MONO_PATH/mcs.exe")
 fi
-args=(-nologo -optimize+ -target:winexe -platform:x64 "-out:$output_dir/F1Manager.exe" "-win32icon:$source_dir/app.ico" "-win32manifest:$source_dir/app.manifest" -r:System.Web.Extensions -r:System.Windows.Forms -r:System.Drawing)
+args=(-sdk:4.5 -warnaserror -nologo -optimize+ -target:winexe -platform:x64 "-out:$output_dir/F1Manager.exe" "-win32icon:$source_dir/app.ico" "-win32manifest:$source_dir/app.manifest" -r:System.Web.Extensions -r:System.Windows.Forms -r:System.Drawing)
 for file in "$source_dir"/assets/*.jpg; do
   index="$(basename "$file" .jpg)"
   args+=("-resource:$file,track$((10#$index))")
@@ -20,7 +20,17 @@ for file in "$source_dir"/assets/drivers/*.png; do
   index="$(basename "$file" .png)"
   args+=("-resource:$file,driver$((10#$index))")
 done
+for file in "$source_dir"/assets/teams/*.png; do
+  index="$(basename "$file" .png)"
+  args+=("-resource:$file,team$((10#$index))")
+done
+for file in "$source_dir"/assets/tyres/*.png; do
+  index="$(basename "$file" .png)"
+  args+=("-resource:$file,tyre$index")
+done
+args+=("-resource:$source_dir/assets/tyres/credits.json,tyrecredits")
+args+=("-resource:$source_dir/assets/teams/credits.json,teamcredits")
 args+=("-resource:$source_dir/assets/credits.json,credits" "-resource:$source_dir/assets/drivers/credits.json,drivercredits")
-for file in Models Data Engine UI Workflow UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
+for file in Models Data Engine UI Workflow Shell StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
 "${compiler[@]}" "${args[@]}"
 printf 'Built: %s/F1Manager.exe\n' "$output_dir"

@@ -16,6 +16,7 @@ CONF
 printf 'deb [signed-by=/usr/share/keyrings/debian-archive-keyring.gpg] https://deb.debian.org/debian trixie main\n' > "$tool_dir/apt/etc/sources.list"
 APT_CONFIG="$tool_dir/apt/apt.conf" apt-get update
 APT_CONFIG="$tool_dir/apt/apt.conf" apt-get --download-only -y install mono-mcs libmono-system-windows-forms4.0-cil libmono-system-web-extensions4.0-cil xvfb xauth libgdiplus fonts-dejavu-core
+(cd "$tool_dir/apt/archives" && APT_CONFIG="$tool_dir/apt/apt.conf" apt-get download mono-devel)
 for archive in "$tool_dir"/apt/archives/*.deb; do dpkg-deb -x "$archive" "$tool_dir/root"; done
 cat > "$tool_dir/activate.sh" <<'ACTIVATE'
 export MONO_ROOT=/workspace/toolchain/root

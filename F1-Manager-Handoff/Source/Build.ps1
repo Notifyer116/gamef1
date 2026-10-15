@@ -18,12 +18,16 @@ $taskIcon = [System.Drawing.Icon]::FromHandle($taskBitmap.GetHicon())
 $taskStream = [System.IO.File]::Create((Join-Path $taskSource 'app.ico'))
 $taskIcon.Save($taskStream)
 $taskStream.Dispose(); $taskIcon.Dispose(); $taskGraphics.Dispose(); $taskBitmap.Dispose(); $taskBrush.Dispose(); $taskFont.Dispose()
-$taskArgs = @('/nologo','/optimize+','/target:winexe','/platform:x64',('/out:' + (Join-Path $taskOutput 'F1Manager.exe')),('/win32icon:' + (Join-Path $taskSource 'app.ico')),('/win32manifest:' + (Join-Path $taskSource 'app.manifest')),'/r:System.Web.Extensions.dll','/r:System.Windows.Forms.dll','/r:System.Drawing.dll')
+$taskArgs = @('/nologo','/warnaserror+','/optimize+','/target:winexe','/platform:x64',('/out:' + (Join-Path $taskOutput 'F1Manager.exe')),('/win32icon:' + (Join-Path $taskSource 'app.ico')),('/win32manifest:' + (Join-Path $taskSource 'app.manifest')),'/r:System.Web.Extensions.dll','/r:System.Windows.Forms.dll','/r:System.Drawing.dll')
 Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets') -Filter '*.jpg' | Sort-Object Name | ForEach-Object { $taskIndex = [int]$_.BaseName; $taskArgs += ('/resource:' + $_.FullName + ',track' + $taskIndex) }
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\credits.json') + ',credits')
 Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\drivers') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',driver' + [int]$_.BaseName) }
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\drivers\credits.json') + ',drivercredits')
-foreach ($taskFile in @('Models.cs','Data.cs','Engine.cs','UI.cs','Workflow.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
+Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\teams') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',team' + [int]$_.BaseName) }
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\teams\credits.json') + ',teamcredits')
+Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\tyres') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',tyre' + $_.BaseName) }
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\tyres\credits.json') + ',tyrecredits')
+foreach ($taskFile in @('Models.cs','Data.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @taskArgs
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed' }
 Write-Output ('Built: ' + (Join-Path $taskOutput 'F1Manager.exe'))

@@ -1,0 +1,42 @@
+[
+  {
+    "compound": "S",
+    "file": "S.png",
+    "source": "https://github.com/Nicxe/f1-sensor-live-data-card/blob/aeb8e754acbbeeadf281d2fe400f105306f3841c/images/soft_tyre.png",
+    "source_sha256": "dfe71763bb5f43c91bfc6225004940729c5f89d9a71456e5a958d9044f27d7a8",
+    "license": "MIT (repository distribution); Pirelli trademarks remain the property of their owner.",
+    "changes": "None; original PNG embedded."
+  },
+  {
+    "compound": "M",
+    "file": "M.png",
+    "source": "https://github.com/Nicxe/f1-sensor-live-data-card/blob/aeb8e754acbbeeadf281d2fe400f105306f3841c/images/medium_tyre.png",
+    "source_sha256": "a7572cfbdc4ec2ee394944e420374b26b5804ba0f9896f3aa3f38e2a238a21b1",
+    "license": "MIT (repository distribution); Pirelli trademarks remain the property of their owner.",
+    "changes": "None; original PNG embedded."
+  },
+  {
+    "compound": "H",
+    "file": "H.png",
+    "source": "https://github.com/Nicxe/f1-sensor-live-data-card/blob/aeb8e754acbbeeadf281d2fe400f105306f3841c/images/hard_tyre.png",
+    "source_sha256": "9ae43efe1effe59f17e295b82c8e0705b87bbeea6b412e6495eebc44eacb2683",
+    "license": "MIT (repository distribution); Pirelli trademarks remain the property of their owner.",
+    "changes": "None; original PNG embedded."
+  },
+  {
+    "compound": "I",
+    "file": "I.png",
+    "source": "https://github.com/Nicxe/f1-sensor-live-data-card/blob/aeb8e754acbbeeadf281d2fe400f105306f3841c/images/intermediate_tyre.png",
+    "source_sha256": "282d46a1e0e00e176b0fed490d5ae2932f9a5f5b905aaa26f4edc89a3e4f71ac",
+    "license": "MIT (repository distribution); Pirelli trademarks remain the property of their owner.",
+    "changes": "None; original PNG embedded."
+  },
+  {
+    "compound": "W",
+    "file": "W.png",
+    "source": "https://github.com/Nicxe/f1-sensor-live-data-card/blob/aeb8e754acbbeeadf281d2fe400f105306f3841c/images/wet_tyre.png",
+    "source_sha256": "b68b0b2208214102f7f1e4f5cc2a517f2bafd93bf1050a00d2c3dbaf17c7f402",
+    "license": "MIT (repository distribution); Pirelli trademarks remain the property of their owner.",
+    "changes": "None; original PNG embedded."
+  }
+]

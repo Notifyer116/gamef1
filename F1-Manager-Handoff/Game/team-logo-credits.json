@@ -1,0 +1,90 @@
+[
+  {
+    "team": "McLaren",
+    "file": "00.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/mclaren.svg",
+    "source_sha256": "b6b474ccc6f7c6963b5dda4ed09039daf939e41ba0e108ddd1baa6e4956d2046",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Ferrari",
+    "file": "01.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/ferrari.svg",
+    "source_sha256": "30d3367b2a84fcfd7672a6b1f738250477ae602142ef85cd4f1e2c1da62c3ddf",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Red Bull Racing",
+    "file": "02.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/red-bull-racing.svg",
+    "source_sha256": "f018509469bbe3d53ee340f194ef7a16751b40aaef33c8bcb17427a19c5f9ee0",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Mercedes",
+    "file": "03.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/mercedes.svg",
+    "source_sha256": "98e6e1d4dbe6f9747ae95483877cf0196380a5f49f6c19d2726afa62929e0dc5",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Aston Martin",
+    "file": "04.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/aston-martin.svg",
+    "source_sha256": "a3392ea1ef7635c7238894d04ec14dadfeda17cbeeb37fa057843f79a3000c24",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Alpine",
+    "file": "05.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/alpine.svg",
+    "source_sha256": "4b6d75d75b865f7890389b25fd9d64c2d3251383059a821b388d203d31c45f13",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Haas F1 Team",
+    "file": "06.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/haas-f1-team.svg",
+    "source_sha256": "b239fa9d4cb409fb7cd4bf5e345ab6c2fcb4dcfe750ad19ddcf85ada9c6136fd",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Racing Bulls",
+    "file": "07.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/racing-bulls.svg",
+    "source_sha256": "c5540c996d923e981c98a6aa1073c378aa5c289567a77c89d0174c2069d6501f",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Williams",
+    "file": "08.png",
+    "source": "https://github.com/slowlydev/f1-dash/blob/d21607afbbab44a97863a605bad174d3c92367f2/dashboard/public/team-logos/williams.svg",
+    "source_sha256": "b7661f7bfdbffd1a4db04ab602e7df9adaf36f3eee0dd227a16a2b65b1c0a8c8",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Audi",
+    "file": "09.png",
+    "source": "https://github.com/shvmmshr/f1lytics/blob/e5d799a7739db13f9d7033111e7441de1c702449/public/teams/audi.webp",
+    "source_sha256": "ec02f7b2d3b4ac034e555667b166fcd7da05edad9e75fe01ced39902f5479784",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  },
+  {
+    "team": "Cadillac",
+    "file": "10.png",
+    "source": "https://github.com/shvmmshr/f1lytics/blob/e5d799a7739db13f9d7033111e7441de1c702449/public/teams/cadillac.webp",
+    "source_sha256": "e3070151cb8334ee161344acb06f5ddcc0e9856e8e4ed9bb006f59bea704e538",
+    "rights": "Original team/manufacturer trademarks. Public source access does not grant a trademark license. Marks remain the property of their respective owners.",
+    "changes": "Rasterized to PNG; original artwork retained."
+  }
+]

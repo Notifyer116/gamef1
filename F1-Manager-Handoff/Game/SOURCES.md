@@ -57,3 +57,13 @@
 Для 22 пилотов стартового грида 2026 и Yuki Tsunoda добавлены фотографии из общедоступных репозиториев [Subin-Ju/f1-driver-images](https://github.com/Subin-Ju/f1-driver-images) и [teresakrchen/f1-driver-image-2026](https://github.com/teresakrchen/f1-driver-image-2026). Некоторые снимки показывают форму предыдущего сезона. Для каждого портрета сохранены URL исходного файла с точным коммитом, SHA-256 загруженного оригинала и описание преобразования в `driver-photo-credits.json`. Портреты конвертированы в PNG, уменьшены и кадрированы для интерфейса.
 
 В этих репозиториях не указана свободная лицензия на сами фотографии. Открытая доступность файла и лицензия на программный код не передают права на изображение. Права остаются у соответствующих правообладателей; условия личного использования проекта не меняются.
+
+## Логотипы команд, обновление 2.2
+
+Оригинальные знаки McLaren, Ferrari, Red Bull, Mercedes, Aston Martin, Alpine, Haas, Racing Bulls и Williams получены из общедоступного репозитория [slowlydev/f1-dash](https://github.com/slowlydev/f1-dash/tree/main/dashboard/public/team-logos). Знаки Audi и Cadillac — из [shvmmshr/f1lytics](https://github.com/shvmmshr/f1lytics/tree/main/public/teams). SVG преобразованы в PNG для встроенных ресурсов Windows Forms; рисунок знаков сохранён. Для Audi и Cadillac используются оригинальные эмблемы производителей.
+
+Для каждого файла в `team-logo-credits.json` указаны точный коммит источника, URL и SHA-256 оригинала. Логотипы являются товарными знаками их владельцев; доступность исходного файла не передаёт права на товарный знак. У собственной вымышленной команды отдельная нейтральная отметка «+».
+
+## Изображения шин, обновление 2.2
+
+Изображения пяти составов получены из общедоступного репозитория [Nicxe/f1-sensor-live-data-card](https://github.com/Nicxe/f1-sensor-live-data-card/tree/main/images). Использованы оригинальные PNG без изменений: soft, medium, hard, intermediate, wet. Точный коммит, URL и контрольные суммы исходных файлов перечислены в `tyre-photo-credits.json`. Лицензия исходной поставки MIT включена в `tyre-assets-LICENSE.txt`; знаки Pirelli принадлежат их владельцам.

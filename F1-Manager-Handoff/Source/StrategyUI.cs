@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Reflection;
+using System.Windows.Forms;
+namespace F1Manager {
+public static class TyrePhotos {
+    public static readonly string[] Codes={"S","M","H","I","W"};
+    static readonly string[] Names={"Мягкие","Средние","Жёсткие","Промежуточные","Дождевые"};
+    static readonly Color[] Colors={Color.FromArgb(255,65,78),Color.FromArgb(255,211,62),Color.FromArgb(238,239,243),Color.FromArgb(70,211,136),Color.FromArgb(80,156,255)};
+    static readonly Dictionary<string,Image> cache=new Dictionary<string,Image>();
+    public static string Name(string code){int n=Array.IndexOf(Codes,code);return n<0?code:Names[n];}
+    public static Color ColorFor(string code){int n=Array.IndexOf(Codes,code);return n<0?Color.Gray:Colors[n];}
+    public static Image Get(string code){if(string.IsNullOrEmpty(code))return null;Image image;if(cache.TryGetValue(code,out image))return image;using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("tyre"+code)){if(stream!=null)using(var original=Image.FromStream(stream))image=new Bitmap(original);}cache[code]=image;return image;}
+}
+public abstract class GameChoice:Button {
+    readonly Timer animation=new Timer();double hover;bool hovered;public bool Selected;
+    protected GameChoice(){SetStyle(ControlStyles.UserPaint|ControlStyles.AllPaintingInWmPaint|ControlStyles.OptimizedDoubleBuffer,true);BackColor=Color.FromArgb(34,38,48);ForeColor=Color.White;FlatStyle=FlatStyle.Flat;FlatAppearance.BorderSize=0;Cursor=Cursors.Hand;Font=new Font("Segoe UI",12,FontStyle.Regular,GraphicsUnit.Pixel);animation.Interval=16;animation.Tick+=(o,e)=>{double target=hovered?1:0;hover+=(target-hover)*.22;if(Math.Abs(target-hover)<.01){hover=target;animation.Stop();}Invalidate();};MouseEnter+=(o,e)=>{hovered=true;animation.Start();};MouseLeave+=(o,e)=>{hovered=false;animation.Start();};}
+    protected override void OnPaint(PaintEventArgs e){var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;using(var path=Theme.Round(new Rectangle(1,1,Width-3,Height-3),10))using(var b=new SolidBrush(Theme.Mix(Selected?Color.FromArgb(65,30,37):BackColor,Selected?Color.FromArgb(83,35,44):Color.FromArgb(48,53,66),hover)))using(var pen=new Pen(Selected?Theme.Red:Theme.Border,Selected?2:1)){g.FillPath(b,path);g.DrawPath(pen,path);}DrawChoice(g);if(Focused)using(var p=new Pen(Color.FromArgb(100,Color.White)))using(var path=Theme.Round(new Rectangle(4,4,Width-9,Height-9),8))g.DrawPath(p,path);}
+    protected abstract void DrawChoice(Graphics g);
+    protected void TextLine(Graphics g,string text,Rectangle rect,int size,Color color,bool bold=false){using(var font=new Font("Segoe UI",size,bold?FontStyle.Bold:FontStyle.Regular,GraphicsUnit.Pixel))TextRenderer.DrawText(g,text,font,rect,color,TextFormatFlags.VerticalCenter|TextFormatFlags.EndEllipsis|TextFormatFlags.SingleLine);}
+    protected override void Dispose(bool disposing){if(disposing)animation.Dispose();base.Dispose(disposing);}
+}
+public class StrategyTile:GameChoice {
+    readonly string title;readonly string[] route;
+    public StrategyTile(string text,IEnumerable<string> tyres){title=text;route=tyres.ToArray();AccessibleName=text;}
+    protected override void DrawChoice(Graphics g){TextLine(g,title,new Rectangle(10,5,Width-20,24),12,Color.White,true);int x=12;for(int i=0;i<route.Length;i++){Theme.ImageFit(g,TyrePhotos.Get(route[i]),new Rectangle(x,25,20,21));x+=28;if(i<route.Length-1)TextLine(g,"›",new Rectangle(x-5,27,10,18),10,Theme.Muted);}}
+}
+public class TyreTile:GameChoice {
+    public string Code,Caption;
+    public TyreTile(string code,string caption){Code=code;Caption=caption;AccessibleName=caption+" / "+TyrePhotos.Name(code);}
+    protected override void DrawChoice(Graphics g){int photoHeight=Height-48;Theme.ImageFit(g,TyrePhotos.Get(Code),new Rectangle(9,22,Width-18,photoHeight));TextLine(g,Caption,new Rectangle(7,3,Width-14,20),10,Theme.Muted);using(var b=new SolidBrush(TyrePhotos.ColorFor(Code)))g.FillRectangle(b,Width/2-12,Height-25,24,2);TextLine(g,TyrePhotos.Name(Code),new Rectangle(5,Height-23,Width-10,22),11,Color.White,true);}
+}
+public class StrategyOverlay:GameOverlay {
+    readonly Career state;readonly Person[] drivers;readonly Plan[] plans=new Plan[2];
+    internal readonly StrategyTile[][] PlanChoices=new StrategyTile[2][];
+    internal readonly TextBox[] Stops=new TextBox[2];
+    internal readonly SoftButton[] AddStop=new SoftButton[2],RemoveStop=new SoftButton[2];
+    internal readonly List<TyreTile>[] StintChoices={new List<TyreTile>(),new List<TyreTile>()};
+    internal readonly SoftButton ConfirmButton=new SoftButton{Primary=true,Text="Подтвердить и начать сессию"},CancelButton=new SoftButton{Text="Назад"};
+    internal Label ErrorLabel;
+    readonly RoundedPanel[] cards=new RoundedPanel[2];
+    readonly RoundedPanel picker=new RoundedPanel{BackColor=Color.FromArgb(29,32,40),Visible=false};
+    readonly Label pickerTitle=new Label();
+    internal readonly TyreTile[] CompoundChoices=new TyreTile[5];
+    int selectedDriver,selectedStint;
+    public event Action Confirmed,CancelRequested;
+    protected override Size SheetSize {get{return new Size(1120,700);}}
+    public StrategyOverlay(Career career,bool animated):base(animated){state=career;drivers=Engine.Drivers(state,state.Player).OrderBy(p=>p.Deal.Seat).ToArray();bool sprint=Engine.SprintPlan(state);LabelAt(Sheet,sprint?"СТРАТЕГИЯ НА СПРИНТ":"СТРАТЕГИЯ НА ГРАН-ПРИ",30,22,1000,38,27,true,Color.White);LabelAt(Sheet,Data.Tracks[state.Round].Country+"  /  "+Engine.PlanLaps(state)+" кругов  /  "+state.Weekend.Weather,32,65,1000,24,14);LabelAt(Sheet,sprint?"Выберите план и шины на каждый отрезок. Остановки необязательны.":"Рекомендация: "+Data.Strategies[Engine.Recommended(state)]+". Нажмите на шину, чтобы заменить состав.",32,96,1000,26,12,false,Theme.Red);
+        for(int i=0;i<2;i++){int driverIndex=i;var driver=drivers[i];var current=Engine.PlanFor(state,driver.Id);plans[i]=new Plan{Mode=current.Mode,Stops=new List<int>(current.Stops),Tyres=new List<string>(current.Tyres)};var card=new RoundedPanel{BackColor=Color.FromArgb(28,31,39)};cards[i]=card;Sheet.Controls.Add(card);card.Controls.Add(new PictureBox{Image=DriverPhotos.Get(driver),SizeMode=PictureBoxSizeMode.Zoom,Bounds=new Rectangle(16,10,58,78)});LabelAt(card,driver.Name,91,21,370,32,21,true,Color.White);LabelAt(card,"ПИЛОТ "+(i+1)+"  /  "+driver.Deal.Role,92,57,370,21,10);LabelAt(card,"ПЛАН ГОНКИ",17,92,400,20,10,true);PlanChoices[i]=new StrategyTile[4];for(int mode=0;mode<4;mode++){int selectedMode=mode;var preset=Engine.DefaultPlan(state,mode);string[] names=sprint?new[]{"Длинный отрезок","Баланс","Атака","Дождевой"}:new[]{"Один пит-стоп","Два пит-стопа","Атака / три пит-стопа","Дождевой"};var tile=new StrategyTile(names[mode],preset.Tyres);tile.Selected=current.Mode==mode;tile.Click+=(o,e)=>SelectPlan(driverIndex,selectedMode);PlanChoices[i][mode]=tile;card.Controls.Add(tile);}LabelAt(card,sprint?"КРУГИ ПИТОВ / МОЖНО ОСТАВИТЬ ПУСТЫМИ":"КРУГИ ПИТ-СТОПОВ ЧЕРЕЗ ЗАПЯТУЮ",17,225,430,21,10,true);var stops=new TextBox{Text=string.Join(",",current.Stops),Location=new Point(18,247),BackColor=Color.FromArgb(38,42,52),ForeColor=Color.White,BorderStyle=BorderStyle.FixedSingle,Font=new Font("Segoe UI",14,FontStyle.Regular,GraphicsUnit.Pixel)};Stops[i]=stops;card.Controls.Add(stops);AddStop[i]=new SoftButton{Text="+",AccessibleName="Добавить пит-стоп"};RemoveStop[i]=new SoftButton{Text="−",AccessibleName="Убрать пит-стоп"};AddStop[i].Click+=(o,e)=>ChangeStopCount(driverIndex,1);RemoveStop[i].Click+=(o,e)=>ChangeStopCount(driverIndex,-1);card.Controls.Add(AddStop[i]);card.Controls.Add(RemoveStop[i]);LabelAt(card,"ШИНЫ НА ОТРЕЗКАХ / НАЖМИТЕ ДЛЯ ВЫБОРА",17,282,430,20,10,true);RebuildStints(i);}
+        ErrorLabel=LabelAt(Sheet,"",32,595,1000,42,12,false,Color.FromArgb(255,111,117));Sheet.Controls.Add(ConfirmButton);Sheet.Controls.Add(CancelButton);ConfirmButton.Click+=(o,e)=>Confirm();CancelButton.Click+=(o,e)=>Cancel();picker.Controls.Add(pickerTitle);pickerTitle.ForeColor=Color.White;pickerTitle.Font=new Font("Segoe UI",16,FontStyle.Bold,GraphicsUnit.Pixel);var close=new SoftButton{Text="×",Bounds=new Rectangle(611,12,35,30)};close.Click+=(o,e)=>ClosePicker();picker.Controls.Add(close);for(int i=0;i<5;i++){string code=TyrePhotos.Codes[i];var tile=new TyreTile(code,code=="I"?"ВЛАЖНО":code=="W"?"СИЛЬНЫЙ ДОЖДЬ":"СУХАЯ ТРАССА"){Bounds=new Rectangle(16+i*128,57,118,143)};tile.Click+=(o,e)=>{plans[selectedDriver].Tyres[selectedStint]=code;StintChoices[selectedDriver][selectedStint].Code=code;StintChoices[selectedDriver][selectedStint].AccessibleName="Отрезок "+(selectedStint+1)+" / "+TyrePhotos.Name(code);StintChoices[selectedDriver][selectedStint].Invalidate();ErrorLabel.Text="";ClosePicker();};CompoundChoices[i]=tile;picker.Controls.Add(tile);}Sheet.Resize+=(o,e)=>LayoutCards();LayoutCards();}
+    void SelectPlan(int index,int mode){if(picker.Parent!=null)ClosePicker();plans[index]=Engine.DefaultPlan(state,mode);Stops[index].Text=string.Join(",",plans[index].Stops);for(int i=0;i<4;i++){PlanChoices[index][i].Selected=i==mode;PlanChoices[index][i].Invalidate();}RebuildStints(index);ErrorLabel.Text="";LayoutCards();}
+    void ChangeStopCount(int index,int delta){if(picker.Parent!=null)ClosePicker();int count=plans[index].Tyres.Count+delta,min=Engine.SprintPlan(state)?1:2;if(count<min||count>4)return;while(plans[index].Tyres.Count<count)plans[index].Tyres.Add(plans[index].Tyres.Last());while(plans[index].Tyres.Count>count)plans[index].Tyres.RemoveAt(plans[index].Tyres.Count-1);plans[index].Stops=Enumerable.Range(1,count-1).Select(n=>(int)Math.Round(Engine.PlanLaps(state)*n/(double)count)).ToList();Stops[index].Text=string.Join(",",plans[index].Stops);if(!Engine.SprintPlan(state)&&plans[index].Mode!=3)plans[index].Mode=count-2;for(int i=0;i<4;i++){PlanChoices[index][i].Selected=plans[index].Mode==i;PlanChoices[index][i].Invalidate();}ErrorLabel.Text="";RebuildStints(index);LayoutCards();}
+    void RebuildStints(int index){foreach(var tile in StintChoices[index]){cards[index].Controls.Remove(tile);tile.Dispose();}StintChoices[index].Clear();for(int i=0;i<plans[index].Tyres.Count;i++){int driver=index,stint=i;var tile=new TyreTile(plans[index].Tyres[i],"ОТРЕЗОК "+(i+1));tile.Click+=(o,e)=>OpenPicker(driver,stint);StintChoices[index].Add(tile);cards[index].Controls.Add(tile);}}
+    void OpenPicker(int driver,int stint){selectedDriver=driver;selectedStint=stint;pickerTitle.Text=drivers[driver].Name+"  /  Отрезок "+(stint+1);pickerTitle.Bounds=new Rectangle(18,17,580,30);foreach(var tile in CompoundChoices){tile.Selected=tile.Code==plans[driver].Tyres[stint];tile.Invalidate();}if(picker.Parent==null)Sheet.Controls.Add(picker);picker.Visible=true;picker.BringToFront();ConfirmButton.Enabled=false;}
+    void ClosePicker(){Sheet.Controls.Remove(picker);picker.Visible=false;ConfirmButton.Enabled=true;StintChoices[selectedDriver][selectedStint].Focus();}
+    void LayoutCards(){if(cards[0]==null||cards[1]==null||ErrorLabel==null)return;int width=(Sheet.Width-84)/2;for(int i=0;i<2;i++){cards[i].Bounds=new Rectangle(32+i*(width+20),124,width,425);for(int mode=0;mode<4;mode++)PlanChoices[i][mode].Bounds=new Rectangle(16+(mode%2)*((width-40)/2+8),112+(mode/2)*56,(width-40)/2,50);Stops[i].Width=width-36;AddStop[i].Bounds=new Rectangle(width-44,221,28,23);RemoveStop[i].Bounds=new Rectangle(width-78,221,28,23);AddStop[i].Enabled=plans[i].Tyres.Count<4;RemoveStop[i].Enabled=plans[i].Tyres.Count>(Engine.SprintPlan(state)?1:2);int count=StintChoices[i].Count;int tileWidth=(width-32-(count-1)*7)/count;for(int j=0;j<count;j++)StintChoices[i][j].Bounds=new Rectangle(16+j*(tileWidth+7),307,tileWidth,110);}ErrorLabel.SetBounds(32,Sheet.Height-112,Sheet.Width-64,39);ConfirmButton.Bounds=new Rectangle(Sheet.Width-382,Sheet.Height-64,350,43);CancelButton.Bounds=new Rectangle(32,Sheet.Height-64,150,43);picker.Bounds=new Rectangle((Sheet.Width-665)/2,(Sheet.Height-218)/2,665,218);}
+    void Confirm(){var backup=new Dictionary<string,Plan>(state.Plans);try{var parsed=Enumerable.Range(0,2).Select(i=>StrategyInput.Parse(plans[i].Mode,Stops[i].Text,string.Join(",",plans[i].Tyres))).ToArray();for(int i=0;i<2;i++)Engine.SetPlan(state,drivers[i].Id,parsed[i]);if(Confirmed!=null)Confirmed();}catch(Exception ex){state.Plans=backup;ErrorLabel.Text=ex.Message;}}
+    protected override void Dispose(bool disposing){if(disposing)picker.Dispose();base.Dispose(disposing);}
+    public override void Cancel(){if(picker.Parent!=null){ClosePicker();return;}if(!Closing&&CancelRequested!=null)CancelRequested();}
+}
+}
