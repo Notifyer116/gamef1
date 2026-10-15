@@ -2,7 +2,7 @@
 
 Офлайн-игра для Windows 10/11 x64, C# / Windows Forms / .NET Framework 4.x.
 
-Актуальная игра: [`F1-Manager-Handoff/Game/F1Manager.exe`](F1-Manager-Handoff/Game/F1Manager.exe). Исходники открыты в [`F1-Manager-Handoff/Source`](F1-Manager-Handoff/Source), инструкция игрока — в [`Game/README.md`](F1-Manager-Handoff/Game/README.md). Первоначальный `F1-Manager-Handoff.zip` сохранён без изменений как архив версии 2.0; он не содержит этот апдейт.
+Актуальная игра: [`F1-Manager-Handoff/Game/F1Manager.exe`](F1-Manager-Handoff/Game/F1Manager.exe). Исходники открыты в [`F1-Manager-Handoff/Source`](F1-Manager-Handoff/Source), инструкция игрока — в [`Game/README.md`](F1-Manager-Handoff/Game/README.md).
 
 В версии 2.1 все сессии рассчитываются целиком за короткой анимацией. Перед Гран-при и спринтом игрок подтверждает стратегию каждого пилота в отдельном окне. Портреты 22 пилотов стартового грида 2026 и Цуноды встроены в EXE. Экономика, контракты, разработка болида, полный календарь, чемпионат, архив и многолетняя карьера сохранены.
 
@@ -28,6 +28,15 @@ xvfb-run -a -s '-screen 0 1600x1100x24' mono F1-Manager-Handoff/Build/F1Manager.
 
 `setup-cloud.sh` получает подписанные пакеты Debian и извлекает Mono/Xvfb в `/workspace/toolchain`, без прав root и изменения системных пакетов. В обычной системе с установленным Mono достаточно `Source/Build.sh`. Проверки интерфейса создают только тестовые карьеры и снимки в указанной папке. Код возврата ненулевой при провале проверок.
 
-Отчёт текущей сборки: [`Game/TEST-REPORT.txt`](F1-Manager-Handoff/Game/TEST-REPORT.txt). Проверки под Mono не заменяют проверку запуска на Windows.
+Отчёты и снимки создаются заново в `F1-Manager-Handoff/Checks/` и не хранятся в Git. Проверки под Mono не заменяют проверку запуска на Windows.
 
 Источники портретов и сведения о правах: [`Game/driver-photo-credits.json`](F1-Manager-Handoff/Game/driver-photo-credits.json). Снимки могут относиться к предыдущему сезону; портрет закреплён за именем, а не за командой, и сохраняется при переходах.
+
+## Структура репозитория
+
+- `F1-Manager-Handoff/Game/` — актуальный EXE, инструкция и сведения об источниках фотографий.
+- `F1-Manager-Handoff/Source/` — исходники игры, проверки, сборочные скрипты и все встраиваемые ресурсы.
+- `F1-Manager-Handoff/F1-Manager-SHA256.txt` — контрольная сумма готового EXE.
+- `scripts/` — подготовка облачной среды для разработки.
+
+Сборочные результаты, тестовые отчёты, снимки интерфейса и пользовательские сохранения исключены из Git.

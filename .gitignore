@@ -5,3 +5,5 @@ F1-Manager-Handoff/Checks/
 **/*.exe.mdb
 
 dist/
+
+**/Previews/
