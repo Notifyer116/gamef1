@@ -36,6 +36,6 @@ public class EngineeringOverlay:GameOverlay {
 }
 public partial class ManagerForm {
     void PresentSession(string name,int round,int year){bool qualify=name.StartsWith("Q")||name.StartsWith("SQ");if(!qualify&&name!="Гонка"&&name!="Спринт"){Notify(name+": результаты готовы.");return;}var result=name=="Гонка"?State.Archive.Last().Sessions.Last():State.Weekend.Results.Last();var podium=new PodiumOverlay(State,result,round,year,Preferences.Animations);podium.Continued+=()=>CloseOverlay(()=>{if(name=="Гонка"&&State.EngineeringReports.Count>0)ShowEngineeringReport(State.EngineeringReports.Last());});ShowOverlay(podium);}
-    internal void ShowEngineeringReport(EngineeringReport report){if(activeOverlay!=null)return;int index=State.EngineeringReports.IndexOf(report);var overlay=new EngineeringOverlay(State,report,index,Preferences.Animations);overlay.Continued+=()=>CloseOverlay(null);overlay.Browse+=direction=>CloseOverlay(()=>ShowEngineeringReport(State.EngineeringReports[index+direction]));ShowOverlay(overlay);}
+    internal void ShowEngineeringReport(EngineeringReport report){if(activeOverlay!=null)return;int index=State.EngineeringReports.IndexOf(report);var overlay=new EngineeringOverlay(State,report,index,Preferences.Animations);overlay.Continued+=()=>CloseOverlay(()=>Go(State.SeasonDone?"hall":"calendar"));overlay.Browse+=direction=>CloseOverlay(()=>ShowEngineeringReport(State.EngineeringReports[index+direction]));ShowOverlay(overlay);}
 }
 }

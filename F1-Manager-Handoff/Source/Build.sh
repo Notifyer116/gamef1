@@ -28,11 +28,16 @@ for file in "$source_dir"/assets/tyres/*.png; do
   index="$(basename "$file" .png)"
   args+=("-resource:$file,tyre$index")
 done
+for file in "$source_dir"/assets/flags/*.png; do
+  code="$(basename "$file" .png)"
+  args+=("-resource:$file,flag$code")
+done
+args+=("-resource:$source_dir/assets/history/champions.json,champions" "-resource:$source_dir/assets/history/credits.json,historycredits" "-resource:$source_dir/assets/history/LICENSE.txt,historylicense" "-resource:$source_dir/assets/flags/credits.json,flagcredits" "-resource:$source_dir/assets/flags/LICENSE.txt,flaglicense")
 args+=("-resource:$source_dir/assets/parts/atlas.png,partatlas" "-resource:$source_dir/assets/parts/credits.json,partcredits")
 args+=("-resource:$source_dir/assets/tyres/credits.json,tyrecredits")
 args+=("-resource:$source_dir/assets/teams/credits.json,teamcredits")
 args+=("-resource:$source_dir/assets/credits.json,credits" "-resource:$source_dir/assets/drivers/credits.json,drivercredits")
 args+=("-resource:$source_dir/assets/maps/circuits.json,circuitmaps" "-resource:$source_dir/assets/maps/credits.json,mapcredits" "-resource:$source_dir/assets/maps/LICENSE.txt,maplicense")
-for file in Models Data CarModel Research Powertrain RaceDirector RaceUI TrackMaps TyreArt StartupPresentation Patch252Tests Patch251Tests Patch25Tests WeatherModel EngineeringTests ResearchTests Patch242Tests Engine UI Workflow Shell FrameClock SliderInput DevelopmentUI ContractUI Presentations StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
+for file in CalendarFlow CalendarUI Scouting ScoutingUI WorldHistory Models Data CarModel Research Powertrain RaceDirector RaceUI TrackMaps TyreArt StartupPresentation Patch26Tests Patch252Tests Patch251Tests Patch25Tests WeatherModel EngineeringTests ResearchTests Patch242Tests Engine UI Workflow Shell FrameClock SliderInput DevelopmentUI ContractUI Presentations StrategyScrollPanel StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
 "${compiler[@]}" "${args[@]}"
 printf 'Built: %s/F1Manager.exe\n' "$output_dir"

@@ -1,0 +1,126 @@
+{
+  "source": "lipis/flag-icons",
+  "license": "MIT",
+  "flags": [
+    {
+      "code": "au",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/au.svg",
+      "sha256": "cbb2206c5e59a25d79228306af973666a191e163f0ae337681f447977e6edb18",
+      "rendered_sha256": "e211b77d008d198de123795b128b20a9ea81305275a4d1ccd1fb3e63d281d402"
+    },
+    {
+      "code": "cn",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/cn.svg",
+      "sha256": "981da9bdf82d48e31691f20578cefcb26cf7d0bd95e4ebd5c0df00bdfe988c1a",
+      "rendered_sha256": "0cec7d63c19c204403708fdb13a3d626428040b8fda5f3803962cbf24d5ed22d"
+    },
+    {
+      "code": "jp",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/jp.svg",
+      "sha256": "bfea80baf9989383dc4bf7ca594ed95be0df0ff125bfc88d0bfa878eb0198022",
+      "rendered_sha256": "61cd78bdb625eabd2da485940ef64a4302b1726e9d98959df8aec0b5268e8e9a"
+    },
+    {
+      "code": "us",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/us.svg",
+      "sha256": "e7be4240cf57987926673708f09233be1ab6bdf35acc7b86bd32a263f197a2a7",
+      "rendered_sha256": "1a2504721831966930815e040e4bd75033e8b4926ab366ad47cb096b1d4d1057"
+    },
+    {
+      "code": "ca",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/ca.svg",
+      "sha256": "345ec9dac057e203f1331b2d3f9f473789864edaee1182a26bc261356bcf72f1",
+      "rendered_sha256": "b8c72e5c18bc09f77ea5487bea6426284f4e16cf53103c3caadea5f2908420ae"
+    },
+    {
+      "code": "mc",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/mc.svg",
+      "sha256": "690c23fe64b6ac71770657fd87f744b88196a7853abb28017b5bff54473ae0da",
+      "rendered_sha256": "d8859a14e7c519f25dab24102a95a0415e4a1468b5a1a96ce89057a44da16b2b"
+    },
+    {
+      "code": "es",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/es.svg",
+      "sha256": "f9cfaff858e95f830733ade9591037b5322dfb5827a53b70956a3d190bb49b9a",
+      "rendered_sha256": "d3849e6612089e9c01be075be5cd32fbf7b3cda3aa8e6638da46bb06bf6e1ef0"
+    },
+    {
+      "code": "at",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/at.svg",
+      "sha256": "c0e5cb3c1d59fd002afd6e2b0dd03787677ca3c9e7b2321f4af6d9e28256ebcd",
+      "rendered_sha256": "75b5d9dd4af81b32c003ce9e20aced0352a4e0d6a86159849b8339646d66e2a6"
+    },
+    {
+      "code": "gb",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/gb.svg",
+      "sha256": "c8be1e7208798a4ae692ee1e937065d498bb29e741943f6172b29118b8ed8066",
+      "rendered_sha256": "3ab3710f8bebee28923682f2d9719fc39359cefdbb9944fa400288de6e1dcc27"
+    },
+    {
+      "code": "be",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/be.svg",
+      "sha256": "d6aff6fa4c913404eafd53f91c0a9b240fcecaddc8f0ac2160d362e38469342c",
+      "rendered_sha256": "aa54252f00a2cfeb56d513a9392679081f8c5589625ddcefdfb12c6753314d53"
+    },
+    {
+      "code": "hu",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/hu.svg",
+      "sha256": "4891ce591bf29b5b68609c29d973a30f1ef109032d8dab369208d0d5f615bc74",
+      "rendered_sha256": "8a92563a109dd0a807335f7b809b0ea4439927fd086356cb037c94a8661ff7ba"
+    },
+    {
+      "code": "nl",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/nl.svg",
+      "sha256": "8f691f17fe70894537af8e92f2ca47761d353639b0defc15cbe561eb503ab010",
+      "rendered_sha256": "2489cab014d7b36140e191d9ecb954179b13938beaeadac55b4bee6cb87144d6"
+    },
+    {
+      "code": "it",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/it.svg",
+      "sha256": "9fa88118818d9b64838f578e2babcca3d0630aed21b5c33b34aff7ac5ce506bc",
+      "rendered_sha256": "b8ff11e35c0ddff850ab6e11177224d9d65623d134c84047a34c17a0bb89b021"
+    },
+    {
+      "code": "az",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/az.svg",
+      "sha256": "33ad245b2125c36fbf0f863b0edd5c85cbef37587900e101db3a615870504502",
+      "rendered_sha256": "f9865b7869e625cc0cf9f802bc385271fed5fdfe3878819fc8ca23a1ec7bc261"
+    },
+    {
+      "code": "bh",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/bh.svg",
+      "sha256": "7a519f58c9007731d70a975a48cc81fcf516ab52ab972f9739eace370431e0c2",
+      "rendered_sha256": "ca895f3f0802d9b31230761061bee6f720f62bdf24b54793004aef04f3e2e40a"
+    },
+    {
+      "code": "sg",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/sg.svg",
+      "sha256": "25de9044c2e2775f7ccf9c1df02dd02342f915715b22c43248452b7ae24079a5",
+      "rendered_sha256": "f88f0d34863748db8950f971fc51ef0272d441fabd717f67d7284ff804991ddf"
+    },
+    {
+      "code": "mx",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/mx.svg",
+      "sha256": "9dbc8ad8b35e52ce7cb686d5cd93bd95e4c0dd8505c184186a740148ffd34901",
+      "rendered_sha256": "a66c82c7977056ce81e362ddad076f0584eb93d7f48b7b44593a6e04ad7d2f9c"
+    },
+    {
+      "code": "br",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/br.svg",
+      "sha256": "b0a912826c3ffd7287435ebed66e18fe058e992309c00dc10b430dd41a29ba91",
+      "rendered_sha256": "6f946112417be73f36e2df438ce3826e045b55c30d9dec41ebeaef9b9a6382f5"
+    },
+    {
+      "code": "qa",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/qa.svg",
+      "sha256": "fb955ef352ff3ba1ea980090c31d5cf15257729d32949d04b18402651e93b986",
+      "rendered_sha256": "49d270e80d68f408cb77f0c3e26c96d8128c0b58912046debb859a900a5f42df"
+    },
+    {
+      "code": "ae",
+      "url": "https://raw.githubusercontent.com/lipis/flag-icons/main/flags/4x3/ae.svg",
+      "sha256": "3bc52a4aac7c6c68cd7c0a04013fa14f715abfe6958e7a6e3194f0793c9eb816",
+      "rendered_sha256": "d87527aecb55d12f65b7140c1da14e5622094eee275c157c8d2e0d940438dcd9"
+    }
+  ]
+}

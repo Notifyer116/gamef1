@@ -1,0 +1,583 @@
+{
+  "source": "F1DB",
+  "license": "CC-BY-4.0",
+  "url": "https://github.com/f1db/f1db",
+  "inputs": [
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1950/driver-standings.yml",
+      "sha256": "4084435e4dc24c6b4bd00c135b9d4ce77479128f3e3d09f1c27aaaf1c5717ab4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1951/driver-standings.yml",
+      "sha256": "116841e8e9f13c083c3fce36a20b16535b6fab6ff9813c746bdbee7d7bae0645"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1952/driver-standings.yml",
+      "sha256": "1295d9c08d4873eb5fb4f97b54e1febd4d117ae7f00f15f93369008464615fcc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1953/driver-standings.yml",
+      "sha256": "fef61ad2910f9ad4049ec9f6b1aee0d9b604b8f2232e6512479f4dbb2e6803ee"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1954/driver-standings.yml",
+      "sha256": "40d52e3432e668f0ae920491fbabe8e3e857e388253f457febd8ccfad0e71070"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1955/driver-standings.yml",
+      "sha256": "3edc790963216774fc5a0a2f21b06150c2dce3e2af0ff6d4b64b75b9d4890731"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1956/driver-standings.yml",
+      "sha256": "8950df5a103b59f29af9caaef88b98c8a25bfa1557e4cbc2fff14f7c5833131b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1957/driver-standings.yml",
+      "sha256": "c3aaf917a588d63c582c3cdaf3438d2ac5f3c1d1afb58f1655f1305b55d71a29"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1958/driver-standings.yml",
+      "sha256": "1456a4599cad741ef60c0274e0153ef214db7d0c9da5c04a81b3e7cf9aacefc2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1958/constructor-standings.yml",
+      "sha256": "f76f0dcd45418a353f3c92747d5ea697e59f1cfde38e352cbf859bb5e8864e27"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1959/driver-standings.yml",
+      "sha256": "9c8f22e239f5230650cb076b6957d700e30f87baef8a967e79dc9d3bb9dbf291"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1959/constructor-standings.yml",
+      "sha256": "aa86ab768c700a303a2cc3e2ed94209b81f5bbd1fbf7f924cf704e08dd30374d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1960/driver-standings.yml",
+      "sha256": "a4b9b778acfaa60af29efd5a863d756010e224abfe8159ab06b28783b41aaa2e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1960/constructor-standings.yml",
+      "sha256": "22e077f41f63b6715e8fd8ac49cd9cd9483b1bc250e6edaf99037056b9a632fc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1961/driver-standings.yml",
+      "sha256": "ab387762ea048942e636332ea04d778b627af20acd95288e7f6666c17450add0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1961/constructor-standings.yml",
+      "sha256": "403b7f365d0fc3ba8074b52f96c24462c6f6f6d46023a15db4e6264763575a07"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1962/driver-standings.yml",
+      "sha256": "991d82b1609a3fab7b0d9b598914623be3fff48b9dfb6e73d71f1e72b5f80062"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1962/constructor-standings.yml",
+      "sha256": "f656370de5d0caabfc809c9eee4d2aa8caefcf212168935e469b5698fd0dbb9b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1963/driver-standings.yml",
+      "sha256": "b8f20a8bdc7e54c05a664a2f33af0024622130313ee32f8d86f45a80dddb0d3d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1963/constructor-standings.yml",
+      "sha256": "d3ea2fe2f352087be4f0669ef679bcd7b7ea9970dc3d1a069ebc7320f769a168"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1964/driver-standings.yml",
+      "sha256": "6817b268c64c8ff5d00e80ac25ac2b77fd8d9a730e88ab8aa11ae0ff1193bb26"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1964/constructor-standings.yml",
+      "sha256": "023c805d891c25ac3143da237071d724a226f1acac522478ee6df78ec9d66877"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1965/driver-standings.yml",
+      "sha256": "0381a34cf584cf3664e39667c103ae29aaa95b066fce5fd5c9fc0c4926453075"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1965/constructor-standings.yml",
+      "sha256": "8239985811c1c53fe995de9d8bc2448d744c77d3bbcbdf845f04c768fbe91bcc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1966/driver-standings.yml",
+      "sha256": "074aee7498b211160a4d44116d5cb1eceaa125a165eaef68bafa0d8e700837ee"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1966/constructor-standings.yml",
+      "sha256": "79e62da36c00de94341b25ba1cad1adb41fbec0813f3e6a60577085178d61670"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1967/driver-standings.yml",
+      "sha256": "0ab2caa287769fa7947f16b8b92e48985c976b436ff170b808f0a64167f1ff7e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1967/constructor-standings.yml",
+      "sha256": "0eb750b57ee7ff0ff5c5c9c0169b4ef5d63172e732f7d24a4b74f1d209e60b29"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1968/driver-standings.yml",
+      "sha256": "f1bdae8d6ff5be8f18aa3c2a10322c4396a717d8ec98e7c85050aded1cce2240"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1968/constructor-standings.yml",
+      "sha256": "8b7d841a1d802abf21986c5117acf01ba12b7af2aef494e9d093dc7a867a963c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1969/driver-standings.yml",
+      "sha256": "7e6c63320ddb93432327df2635d5dc07d93068fde928f9c392d88c5a7b57cc0c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1969/constructor-standings.yml",
+      "sha256": "831df426cfdd7a09925b0a3b7146c1f86a112ad7a4fee2a7c586ec123e32e232"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1970/driver-standings.yml",
+      "sha256": "d908e8120b54a9d10040de4839728efb81f798c0e3174de441afc42fec9aeec9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1970/constructor-standings.yml",
+      "sha256": "d4c4c8b69c949769aee46047a5c76243ed8c6a01f30aebe2dcfe135c06acd211"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1971/driver-standings.yml",
+      "sha256": "c427852541f8eaf76ec6aa1d521f49fccf84dbd33cc622ebb9bf54eeefa5435a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1971/constructor-standings.yml",
+      "sha256": "0d35d36d19c28195dc7ab34f021782c1af0623d0d66eca9492db56effdc85785"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1972/driver-standings.yml",
+      "sha256": "8b1cc6d84b3e275e907d20c8ce260905852a07531fd87dc9e6664792d85fe9f1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1972/constructor-standings.yml",
+      "sha256": "e2730805bb9b2a65ad9726ca3e0a51a63859eb70ba144eb0335fab1e2c04b404"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1973/driver-standings.yml",
+      "sha256": "6e275cbe1b3d6520a053a5c84d7a7cbd38d6b71fd6192e0c349be91c176bd93f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1973/constructor-standings.yml",
+      "sha256": "2fc87547fee7658fd7994ed02521dd28d01e6e5e26b2b8b9ba47d87b8b9d17ab"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1974/driver-standings.yml",
+      "sha256": "404e29dcca09aca5f0442d9476e2124f0fbc0b5c187b290072522cacba36fec5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1974/constructor-standings.yml",
+      "sha256": "7611ffcb3ba492603bbd7e87ad6365e48e8996aea649502a476e7f1cf4781a2c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1975/driver-standings.yml",
+      "sha256": "e26574a0d5083e842866ef1b839ddb3d76d48bb54562c5acc1c87fb89956f3f9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1975/constructor-standings.yml",
+      "sha256": "29095a89c72ba6f3cd83de264d095908e4fa392dc19e359aeb1a883c6aadf6f6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1976/driver-standings.yml",
+      "sha256": "3d8b0cbc7856a9c1011b027f637adad36a8043273b96a0f33d000e15a2b7137e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1976/constructor-standings.yml",
+      "sha256": "9a7418ad3d5c40c2bce02a37468ff2b240faa6edff698692293e36221749c477"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1977/driver-standings.yml",
+      "sha256": "d6b199e7e3d626f14195837ef9bd408064dd790dc0d35d3b230fc2d2af2c2294"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1977/constructor-standings.yml",
+      "sha256": "8aba8966b4ff799cf662e4a6158360ac49f7936802bd62575f99fd8fdad6b30d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1978/driver-standings.yml",
+      "sha256": "4939f911166ed274c466ee75d844175517081ef387c3abcd0b0d1e9451f9d9fb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1978/constructor-standings.yml",
+      "sha256": "1e3e25aca23c82c7a334ffcddeb7ead41b201ebcf9f2f5afdcd97c932717a150"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1979/driver-standings.yml",
+      "sha256": "4412779473936b23cfd80b0271f63804568684dd3d76fc6002ce6c0d2ce285bf"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1979/constructor-standings.yml",
+      "sha256": "62da669d14a42f317dfbe9a2cfb6d7c9806b35924c642b3aeb77b8b8e5dfa1fa"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1980/driver-standings.yml",
+      "sha256": "f607088850b64499d72896da905d3ccc607ed76d030830ff7a1eaf79d36e7a57"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1980/constructor-standings.yml",
+      "sha256": "be0a3757de7f2cfd0468ec12fbe36f42774b8f39352a0777b48b7f8a0014098e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1981/driver-standings.yml",
+      "sha256": "a67236a5fa8abd045d989db2540d9ef407f6e03b62a5afd406ee5b5439cc544a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1981/constructor-standings.yml",
+      "sha256": "191ecc5036160bcb44b121cad39183f82c7ac6258cf390b19d5e75ca425c3feb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1982/driver-standings.yml",
+      "sha256": "d798a7d58b872bff87fee578db40f688ac85b9675d84de2e19d9f98c3a071493"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1982/constructor-standings.yml",
+      "sha256": "d5c797bc56059d2e71cd3d8a1b83e7a6e98e0f23b86f739dce7ddc0ac7821d81"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1983/driver-standings.yml",
+      "sha256": "ea88a1fc8c0a5455e28add288af1f4133b9d3efc05e95a5684e85ce4ea2af72a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1983/constructor-standings.yml",
+      "sha256": "309a34e6e024dd94b8a10dfefd31bf866fe34f109ed7662415e3abcab37e373f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1984/driver-standings.yml",
+      "sha256": "c9535de090fcc1bfc9ca9ba5894dccc0d83ae684c82a160cfa200626a07e4646"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1984/constructor-standings.yml",
+      "sha256": "3a515538751a5a7512953732dc6dc54de1345e344d2af5ae16b93a194b8bf2db"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1985/driver-standings.yml",
+      "sha256": "96f4ad2f41a5d481b13d38a3556ccf49f49492c906ab906aef72b2fc07f6c6ae"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1985/constructor-standings.yml",
+      "sha256": "640e91064bc67447433ed61000da4a731dd865c717a29ad0059a00756196cf30"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1986/driver-standings.yml",
+      "sha256": "7d99d2613d40a20e73b01cb62bf23ab17b39571b2486a731759e56a4c86859f3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1986/constructor-standings.yml",
+      "sha256": "2d7b1d884e1a38e3abd82b7bf08a0ef5bac1ef8f19b3830bcff3c3c4b685194a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1987/driver-standings.yml",
+      "sha256": "2b87f333377b9f1b58bbf292cd4ae92b8604c5420ea28937f990e6b5af14e92f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1987/constructor-standings.yml",
+      "sha256": "5fe1829c378bb61146cd6583929013b0fa37d33605ff5dd0049f4d00bbc23e90"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1988/driver-standings.yml",
+      "sha256": "4655815d82b07f0d2c1cf570359ed4d75232e5598a59afeb02ebeb03127237ef"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1988/constructor-standings.yml",
+      "sha256": "73d6049aa4e7dd9d9efbd00d3e0688744651ae43a6616b62a4420f8d32d845c9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1989/driver-standings.yml",
+      "sha256": "5950cb7901e21a988205afbde474a3b66573422c3ca88da635422375f362ae88"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1989/constructor-standings.yml",
+      "sha256": "ea6cb13ff307bed03484a2aff813a59247a3fcadf9d71b3ffe2dd98ced53d8b0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1990/driver-standings.yml",
+      "sha256": "9cee839852a7a648d61fd5a13a9760e6077075678ca70a19edadd1e3fc518521"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1990/constructor-standings.yml",
+      "sha256": "aef0a6559794e08fe6fb50400cf0e817c88c53d4a39646728f7c1a31ae269873"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1991/driver-standings.yml",
+      "sha256": "4d22ed452bf2321cc53ab2b94f81a3d3c22f05c5661aac932897b833aa249546"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1991/constructor-standings.yml",
+      "sha256": "f6325a2b50c6217feb83285eb77e6e91f420a43fe8876de829c45071245938c3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1992/driver-standings.yml",
+      "sha256": "4ea74571808a87fe70ed145ceebf15f7f5283cab49e3e7688fe4ed9dc54797be"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1992/constructor-standings.yml",
+      "sha256": "e10c1773074b5e3cd69e8417e2129e4b37764ca31561d5f3f86aadcdd980daad"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1993/driver-standings.yml",
+      "sha256": "7b2b1ac7966551fbeb594bc15352be601faf9d218120aa422e78ee0f3fb3b6f0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1993/constructor-standings.yml",
+      "sha256": "cbdf6d794ee88bc36769ef530b290c297f593e9365993a3875c4b974e536e496"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1994/driver-standings.yml",
+      "sha256": "775b370eba31f8c0c78db91634c3508fa858675c635334dd12da87457bd7275a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1994/constructor-standings.yml",
+      "sha256": "7375a8b06c1958067e63102b916239273f94c117326497dc706c0b1d7b8965d4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1995/driver-standings.yml",
+      "sha256": "433bbdfa4eb0542f11ec750a980a23aef53779b4059ce5f0cd6bea090b2d4ccc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1995/constructor-standings.yml",
+      "sha256": "308419b15d338bbd32b52359df62f60bca2d857cb4d141c50193fc66507461d0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1996/driver-standings.yml",
+      "sha256": "639ac6bcc20d5f56fe37837b6165fe73f094cd9c15a787104d129358e2cbd0d3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1996/constructor-standings.yml",
+      "sha256": "c78dfe63ec19a4f0a5634bc0d238cb35e01aed2a3b0909e01c21f3d1fbf36f1b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1997/driver-standings.yml",
+      "sha256": "dd82de6ff01cd9ea5414e7d0f1e50ca29420b0b54a5b49cbfe618a28cda05740"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1997/constructor-standings.yml",
+      "sha256": "fbc9cd5d352d44a6a5c4a3b35a0a036c50f884d8a0427e8b9833299890fb4a23"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1998/driver-standings.yml",
+      "sha256": "7e9a614bd9a47154cda720ce94fa6ba338080e5e64ce3eb7c705609ba787fdf6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1998/constructor-standings.yml",
+      "sha256": "926b69dac3dd905447b59aae9744f0ea8fdad2284f46132f3e77597c53f52fd9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1999/driver-standings.yml",
+      "sha256": "f98e7085d1e1ca74f20a2f5b5b6c0dcb54f6ee958d99ef96e4b1bde3933d17a6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/1999/constructor-standings.yml",
+      "sha256": "0ca12bfe067b07e6e0ec8692e17e71e77de4cb41cf58a9f91c3802b0b9d4e86b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2000/driver-standings.yml",
+      "sha256": "186938d3b77537a92ac7de1f52340048e4c45eaebf764a2278a1e6632c17fdcb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2000/constructor-standings.yml",
+      "sha256": "1569b53843bd186de20f3d9e57f1e5299248a190e4dc4f0538850eaecdb75458"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2001/driver-standings.yml",
+      "sha256": "dd98b4600508c917122c6d7ec49d1a9559588510f6a238b155b0b5cd86fa1b3c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2001/constructor-standings.yml",
+      "sha256": "e0377f312bb461679e48abfb9f3bbb19995ab370898500e617b19ecc6ce5993b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2002/driver-standings.yml",
+      "sha256": "87c686b97a9118d7320c34210e01c6563a554ebafd5046243c8db5669f71c384"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2002/constructor-standings.yml",
+      "sha256": "4a0bad3eff8caf902ca3847936a6af17ca77b557f52dc3f219cc06c83cb5bc50"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2003/driver-standings.yml",
+      "sha256": "bce98bcce39e0268864db4c79b8082d359427cf282393ba1e0d8801d2539cd6d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2003/constructor-standings.yml",
+      "sha256": "5b4064b5cb5ef07c5053f9652697f6921f113c8e988cec872142174cfea5bcc1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2004/driver-standings.yml",
+      "sha256": "a157bf2c1fd4558f1b35aa1dfc2c13b2f91aecc8c8291f049c60e8d1eb97543c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2004/constructor-standings.yml",
+      "sha256": "451c114f9a51653f9583501ff995a97fa31484b967e42812e99b5dd25b2ea978"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2005/driver-standings.yml",
+      "sha256": "88f12f0cda046c2fa2019541c1058ef61ab7d5826cd7558516d070f4bcaf24c7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2005/constructor-standings.yml",
+      "sha256": "68c1d9718c23ef33bcae41e6d9e2e5c57a094d4c68bcc5ef981267b8d011c63d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2006/driver-standings.yml",
+      "sha256": "1f1a825e6b09f7aedaeca6b988b3a0abb87328687a812ff6ecd568fba62f95e1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2006/constructor-standings.yml",
+      "sha256": "3644e6c6a29a3b3f3fdc4d85dea65f67659ba912e94e53e0b9f22ad88a457265"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2007/driver-standings.yml",
+      "sha256": "584c21789cb609f0c929e4e09455e7810f93be1d38aa7508ed6075c01962dd96"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2007/constructor-standings.yml",
+      "sha256": "38919a6c7227d6399ca92abfef256678d319ca71a6c78cce7a2f3dc3f512e889"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2008/driver-standings.yml",
+      "sha256": "29a7d892dfdfa7273d5e1e64a66c827dc67a9188a5a90ce35d4c07d21254a01b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2008/constructor-standings.yml",
+      "sha256": "0ba44587bc71994b52fb72730cb1c1438d9b8a67dad9a98c48522c4d7c8bafc9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2009/driver-standings.yml",
+      "sha256": "8805a57c9b5006b93a72e2ea92b0cb6c6e832c2ff0739a703f6a74e5a88d1425"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2009/constructor-standings.yml",
+      "sha256": "b99ebfb95052fb91f55ed2c17e6ba130f1ccf9f3361f6b65fc74c29654c1fd1d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2010/driver-standings.yml",
+      "sha256": "b093191fb95324833216539858b8943f1e8f5f35f0c0954647a933c6eeaf4670"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2010/constructor-standings.yml",
+      "sha256": "f89f1606890c975455d7e9efd883ce24b096bba8fc9af66a15a515ca6eadb0b3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2011/driver-standings.yml",
+      "sha256": "b6dbccaadf48037cb650d8600af913f5e8bf5dad7aa9edab024f0eef8bbad87d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2011/constructor-standings.yml",
+      "sha256": "a7546cdd40bac1f05096aae66217abcc5c5a57ed69eccd02339513f7a5a3a6a3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2012/driver-standings.yml",
+      "sha256": "52f2b47efc884a52ecd3dfe13d29cd03ac10a1ed7b25a7c7e921d51347820687"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2012/constructor-standings.yml",
+      "sha256": "26d01bd8993070e2a5ef65e02b7d0363d1effaad0ee85e24bdad2f6f7d036487"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2013/driver-standings.yml",
+      "sha256": "2e49414647e3bf9e3e2035efff7a8bac90dc4b89fdeb5b33160e01ff7831cca4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2013/constructor-standings.yml",
+      "sha256": "a2342e89da1a442f2c44907eceab2b9d9892569858a8620de24b00217a0b8a59"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2014/driver-standings.yml",
+      "sha256": "ac5164726a4460e897cbcacee080a328455ba8bbd8da8f8b41f6c608e8ac07d7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2014/constructor-standings.yml",
+      "sha256": "e9d2091fd397bbd7e95ffb60a745803b55bf02be8ebd52e492eff2396775d04a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2015/driver-standings.yml",
+      "sha256": "630d420939b42b2dc66e5704631100e4f3df79b90585be461d56101ee70d1be4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2015/constructor-standings.yml",
+      "sha256": "ce7c0e115ca711cb1030d08ba77336f9c25514cb5d417882b3465cbe990762dd"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2016/driver-standings.yml",
+      "sha256": "a2563371ee3aa66f50d37591a0c8a21934128a9ccedb6755931504fd4f91822f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2016/constructor-standings.yml",
+      "sha256": "b327da6b3b00fd566e2bd896ec0140de9b0a07c157d502ad21bdfc48c694f749"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2017/driver-standings.yml",
+      "sha256": "78fe9bc6c2f44ae0f30d0ebb01a174ef47635d2b0ab40be6322f5f689d86a2b1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2017/constructor-standings.yml",
+      "sha256": "2fb3cc10f6fe242ddceef4769f3a76450736fd8549875ef7197c69b241410721"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2018/driver-standings.yml",
+      "sha256": "02e57c673677d29c7055389229d1677b1755e550946c6ed5dbe3551478e8f818"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2018/constructor-standings.yml",
+      "sha256": "4378d2ea42dfa776aec62f9dbd8a6c790bc0bf56af5f435e80a76e735a37af97"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2019/driver-standings.yml",
+      "sha256": "ceb5d836b17311fc8f9f82a7d53df648f9ac01fa769c5b2b3bcb9ca0df77e0aa"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2019/constructor-standings.yml",
+      "sha256": "c61324c25066d9dc78baf19e8d804591cd3df3a1b2c4da0b4ee559ee0311150f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2020/driver-standings.yml",
+      "sha256": "31a3c9f6bf82526cf7687ee5c661d7daeb34f81cd6de09037dd55b09246f72f9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2020/constructor-standings.yml",
+      "sha256": "977e46c3985e8e0e7bb8d37b7ca9b8c85e429afbf6d039828938e04f9dcc70ad"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2021/driver-standings.yml",
+      "sha256": "dd33ba36287d0847a0ce5434d0e394dd63ea02f83a7fe414ef6846356a12a314"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2021/constructor-standings.yml",
+      "sha256": "293cad8c4cac03649f2f460ce82250c15fdd1e0da58eaa7fb4542368cf8d0d89"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2022/driver-standings.yml",
+      "sha256": "8a5d848312579d4151e740c9a01591eb4aecf08eae8923f9c548ddf18bd219b5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2022/constructor-standings.yml",
+      "sha256": "cd1ce1b96092c866e713fb72505c2d66bc9b4e90e5c1051658a1f844e819885b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2023/driver-standings.yml",
+      "sha256": "aba746f282595f931390b3112027d8c46c95e46015df9653ae890bd010edd2eb"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2023/constructor-standings.yml",
+      "sha256": "cc2a6ee136318bb875a32a0128ac592e4b935d30586a352d854aaada1533a9ab"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2024/driver-standings.yml",
+      "sha256": "8c065176d0fd2d7dd9bc9f91945a404f2da4ea436371d94f6bec06a2e787ab5f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2024/constructor-standings.yml",
+      "sha256": "4fd4360139c4489b02968c00df6b4b460d57c5da4ee99390f641444757f7f37a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2025/driver-standings.yml",
+      "sha256": "d55cf174193b3b4d7f383595e7169f52163b85e7cf678e29765fb59c373e9c10"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/f1db/f1db/main/src/data/seasons/2025/constructor-standings.yml",
+      "sha256": "c7764871fa417c197ed50ea171bba3381f9f9d71d523a6ce01ebfa5ff3951cfb"
+    }
+  ]
+}

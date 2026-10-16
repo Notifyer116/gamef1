@@ -27,12 +27,18 @@ Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\teams') -Filter '*.png
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\teams\credits.json') + ',teamcredits')
 Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\tyres') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',tyre' + $_.BaseName) }
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\tyres\credits.json') + ',tyrecredits')
+Get-ChildItem -LiteralPath (Join-Path $taskSource 'assets\flags') -Filter '*.png' | Sort-Object Name | ForEach-Object { $taskArgs += ('/resource:' + $_.FullName + ',flag' + $_.BaseName) }
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\history\champions.json') + ',champions')
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\history\credits.json') + ',historycredits')
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\history\LICENSE.txt') + ',historylicense')
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\flags\credits.json') + ',flagcredits')
+$taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\flags\LICENSE.txt') + ',flaglicense')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\parts\atlas.png') + ',partatlas')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\parts\credits.json') + ',partcredits')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\maps\circuits.json') + ',circuitmaps')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\maps\credits.json') + ',mapcredits')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\maps\LICENSE.txt') + ',maplicense')
-foreach ($taskFile in @('Models.cs','Data.cs','CarModel.cs','Research.cs','Powertrain.cs','RaceDirector.cs','RaceUI.cs','TrackMaps.cs','TyreArt.cs','StartupPresentation.cs','Patch252Tests.cs','Patch251Tests.cs','Patch25Tests.cs','WeatherModel.cs','EngineeringTests.cs','ResearchTests.cs','Patch242Tests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','FrameClock.cs','SliderInput.cs','DevelopmentUI.cs','ContractUI.cs','Presentations.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
+foreach ($taskFile in @('CalendarFlow.cs','CalendarUI.cs','Scouting.cs','ScoutingUI.cs','WorldHistory.cs','Models.cs','Data.cs','CarModel.cs','Research.cs','Powertrain.cs','RaceDirector.cs','RaceUI.cs','TrackMaps.cs','TyreArt.cs','StartupPresentation.cs','Patch26Tests.cs','Patch252Tests.cs','Patch251Tests.cs','Patch25Tests.cs','WeatherModel.cs','EngineeringTests.cs','ResearchTests.cs','Patch242Tests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','FrameClock.cs','SliderInput.cs','DevelopmentUI.cs','ContractUI.cs','Presentations.cs','StrategyScrollPanel.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @taskArgs
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed' }
 Write-Output ('Built: ' + (Join-Path $taskOutput 'F1Manager.exe'))

@@ -1,0 +1,762 @@
+[
+  {
+    "Year": 1950,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Nino Farina",
+    "DriverPoints": 30.0
+  },
+  {
+    "Year": 1951,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Juan Manuel Fangio",
+    "DriverPoints": 31.0
+  },
+  {
+    "Year": 1952,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Alberto Ascari",
+    "DriverPoints": 36.0
+  },
+  {
+    "Year": 1953,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Alberto Ascari",
+    "DriverPoints": 34.5
+  },
+  {
+    "Year": 1954,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Juan Manuel Fangio",
+    "DriverPoints": 42.0
+  },
+  {
+    "Year": 1955,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Juan Manuel Fangio",
+    "DriverPoints": 40.0
+  },
+  {
+    "Year": 1956,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Juan Manuel Fangio",
+    "DriverPoints": 30.0
+  },
+  {
+    "Year": 1957,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Не разыгрывался до 1958",
+    "TeamPoints": 0,
+    "Driver": "Juan Manuel Fangio",
+    "DriverPoints": 40.0
+  },
+  {
+    "Year": 1958,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Vanwall",
+    "TeamPoints": 48.0,
+    "Driver": "Mike Hawthorn",
+    "DriverPoints": 42.0
+  },
+  {
+    "Year": 1959,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Cooper",
+    "TeamPoints": 40.0,
+    "Driver": "Jack Brabham",
+    "DriverPoints": 31.0
+  },
+  {
+    "Year": 1960,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Cooper",
+    "TeamPoints": 48.0,
+    "Driver": "Jack Brabham",
+    "DriverPoints": 43.0
+  },
+  {
+    "Year": 1961,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 40.0,
+    "Driver": "Phil Hill",
+    "DriverPoints": 34.0
+  },
+  {
+    "Year": 1962,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "BRM",
+    "TeamPoints": 42.0,
+    "Driver": "Graham Hill",
+    "DriverPoints": 42.0
+  },
+  {
+    "Year": 1963,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 54.0,
+    "Driver": "Jim Clark",
+    "DriverPoints": 54.0
+  },
+  {
+    "Year": 1964,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 45.0,
+    "Driver": "John Surtees",
+    "DriverPoints": 40.0
+  },
+  {
+    "Year": 1965,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 54.0,
+    "Driver": "Jim Clark",
+    "DriverPoints": 54.0
+  },
+  {
+    "Year": 1966,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Brabham",
+    "TeamPoints": 42.0,
+    "Driver": "Jack Brabham",
+    "DriverPoints": 42.0
+  },
+  {
+    "Year": 1967,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Brabham",
+    "TeamPoints": 63.0,
+    "Driver": "Denny Hulme",
+    "DriverPoints": 51.0
+  },
+  {
+    "Year": 1968,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 62.0,
+    "Driver": "Graham Hill",
+    "DriverPoints": 48.0
+  },
+  {
+    "Year": 1969,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Matra",
+    "TeamPoints": 66.0,
+    "Driver": "Jackie Stewart",
+    "DriverPoints": 63.0
+  },
+  {
+    "Year": 1970,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 59.0,
+    "Driver": "Jochen Rindt",
+    "DriverPoints": 45.0
+  },
+  {
+    "Year": 1971,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Tyrrell",
+    "TeamPoints": 73.0,
+    "Driver": "Jackie Stewart",
+    "DriverPoints": 62.0
+  },
+  {
+    "Year": 1972,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 61.0,
+    "Driver": "Emerson Fittipaldi",
+    "DriverPoints": 61.0
+  },
+  {
+    "Year": 1973,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 92.0,
+    "Driver": "Jackie Stewart",
+    "DriverPoints": 71.0
+  },
+  {
+    "Year": 1974,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 73.0,
+    "Driver": "Emerson Fittipaldi",
+    "DriverPoints": 55.0
+  },
+  {
+    "Year": 1975,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 72.5,
+    "Driver": "Niki Lauda",
+    "DriverPoints": 64.5
+  },
+  {
+    "Year": 1976,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 83.0,
+    "Driver": "James Hunt",
+    "DriverPoints": 69.0
+  },
+  {
+    "Year": 1977,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 95.0,
+    "Driver": "Niki Lauda",
+    "DriverPoints": 72.0
+  },
+  {
+    "Year": 1978,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Lotus",
+    "TeamPoints": 86.0,
+    "Driver": "Mario Andretti",
+    "DriverPoints": 64.0
+  },
+  {
+    "Year": 1979,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 113.0,
+    "Driver": "Jody Scheckter",
+    "DriverPoints": 51.0
+  },
+  {
+    "Year": 1980,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 120.0,
+    "Driver": "Alan Jones",
+    "DriverPoints": 67.0
+  },
+  {
+    "Year": 1981,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 95.0,
+    "Driver": "Nelson Piquet",
+    "DriverPoints": 50.0
+  },
+  {
+    "Year": 1982,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 74.0,
+    "Driver": "Keke Rosberg",
+    "DriverPoints": 44.0
+  },
+  {
+    "Year": 1983,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 89.0,
+    "Driver": "Nelson Piquet",
+    "DriverPoints": 59.0
+  },
+  {
+    "Year": 1984,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 143.5,
+    "Driver": "Niki Lauda",
+    "DriverPoints": 72.0
+  },
+  {
+    "Year": 1985,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 90.0,
+    "Driver": "Alain Prost",
+    "DriverPoints": 73.0
+  },
+  {
+    "Year": 1986,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 141.0,
+    "Driver": "Alain Prost",
+    "DriverPoints": 72.0
+  },
+  {
+    "Year": 1987,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 137.0,
+    "Driver": "Nelson Piquet",
+    "DriverPoints": 73.0
+  },
+  {
+    "Year": 1988,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 199.0,
+    "Driver": "Ayrton Senna",
+    "DriverPoints": 90.0
+  },
+  {
+    "Year": 1989,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 141.0,
+    "Driver": "Alain Prost",
+    "DriverPoints": 76.0
+  },
+  {
+    "Year": 1990,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 121.0,
+    "Driver": "Ayrton Senna",
+    "DriverPoints": 78.0
+  },
+  {
+    "Year": 1991,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 139.0,
+    "Driver": "Ayrton Senna",
+    "DriverPoints": 96.0
+  },
+  {
+    "Year": 1992,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 164.0,
+    "Driver": "Nigel Mansell",
+    "DriverPoints": 108.0
+  },
+  {
+    "Year": 1993,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 168.0,
+    "Driver": "Alain Prost",
+    "DriverPoints": 99.0
+  },
+  {
+    "Year": 1994,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 118.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 92.0
+  },
+  {
+    "Year": 1995,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Benetton",
+    "TeamPoints": 137.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 102.0
+  },
+  {
+    "Year": 1996,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 175.0,
+    "Driver": "Damon Hill",
+    "DriverPoints": 97.0
+  },
+  {
+    "Year": 1997,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Williams",
+    "TeamPoints": 123.0,
+    "Driver": "Jacques Villeneuve",
+    "DriverPoints": 81.0
+  },
+  {
+    "Year": 1998,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 156.0,
+    "Driver": "Mika Hakkinen",
+    "DriverPoints": 100.0
+  },
+  {
+    "Year": 1999,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 128.0,
+    "Driver": "Mika Hakkinen",
+    "DriverPoints": 76.0
+  },
+  {
+    "Year": 2000,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 170.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 108.0
+  },
+  {
+    "Year": 2001,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 179.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 123.0
+  },
+  {
+    "Year": 2002,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 221.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 144.0
+  },
+  {
+    "Year": 2003,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 158.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 93.0
+  },
+  {
+    "Year": 2004,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 262.0,
+    "Driver": "Michael Schumacher",
+    "DriverPoints": 148.0
+  },
+  {
+    "Year": 2005,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Renault",
+    "TeamPoints": 191.0,
+    "Driver": "Fernando Alonso",
+    "DriverPoints": 133.0
+  },
+  {
+    "Year": 2006,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Renault",
+    "TeamPoints": 206.0,
+    "Driver": "Fernando Alonso",
+    "DriverPoints": 134.0
+  },
+  {
+    "Year": 2007,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 204.0,
+    "Driver": "Kimi Raikkonen",
+    "DriverPoints": 110.0
+  },
+  {
+    "Year": 2008,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Ferrari",
+    "TeamPoints": 172.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 98.0
+  },
+  {
+    "Year": 2009,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Brawn GP",
+    "TeamPoints": 172.0,
+    "Driver": "Jenson Button",
+    "DriverPoints": 95.0
+  },
+  {
+    "Year": 2010,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Red Bull Racing",
+    "TeamPoints": 498.0,
+    "Driver": "Sebastian Vettel",
+    "DriverPoints": 256.0
+  },
+  {
+    "Year": 2011,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Red Bull Racing",
+    "TeamPoints": 650.0,
+    "Driver": "Sebastian Vettel",
+    "DriverPoints": 392.0
+  },
+  {
+    "Year": 2012,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Red Bull Racing",
+    "TeamPoints": 460.0,
+    "Driver": "Sebastian Vettel",
+    "DriverPoints": 281.0
+  },
+  {
+    "Year": 2013,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Red Bull Racing",
+    "TeamPoints": 596.0,
+    "Driver": "Sebastian Vettel",
+    "DriverPoints": 397.0
+  },
+  {
+    "Year": 2014,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 701.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 384.0
+  },
+  {
+    "Year": 2015,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 703.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 381.0
+  },
+  {
+    "Year": 2016,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 765.0,
+    "Driver": "Nico Rosberg",
+    "DriverPoints": 385.0
+  },
+  {
+    "Year": 2017,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 668.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 363.0
+  },
+  {
+    "Year": 2018,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 655.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 408.0
+  },
+  {
+    "Year": 2019,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 739.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 413.0
+  },
+  {
+    "Year": 2020,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 573.0,
+    "Driver": "Lewis Hamilton",
+    "DriverPoints": 347.0
+  },
+  {
+    "Year": 2021,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Mercedes",
+    "TeamPoints": 613.5,
+    "Driver": "Max Verstappen",
+    "DriverPoints": 395.5
+  },
+  {
+    "Year": 2022,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Red Bull Racing",
+    "TeamPoints": 759.0,
+    "Driver": "Max Verstappen",
+    "DriverPoints": 454.0
+  },
+  {
+    "Year": 2023,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "Red Bull Racing",
+    "TeamPoints": 860.0,
+    "Driver": "Max Verstappen",
+    "DriverPoints": 575.0
+  },
+  {
+    "Year": 2024,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 666.0,
+    "Driver": "Max Verstappen",
+    "DriverPoints": 437.0
+  },
+  {
+    "Year": 2025,
+    "Historical": true,
+    "DriverId": -1,
+    "TeamId": -1,
+    "Team": "McLaren",
+    "TeamPoints": 833.0,
+    "Driver": "Lando Norris",
+    "DriverPoints": 423.0
+  }
+]
