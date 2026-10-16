@@ -28,12 +28,12 @@ public abstract class GameChoice:GameButton {
 public class StrategyTile:GameChoice {
     readonly string title;readonly string[] route;
     public StrategyTile(string text,IEnumerable<string> tyres){title=text;route=tyres.ToArray();AccessibleName=text;}
-    protected override void DrawChoice(Graphics g){TextLine(g,title,new Rectangle(10,5,Width-20,24),12,Color.White,true);int x=12;for(int i=0;i<route.Length;i++){Theme.ImageFit(g,TyrePhotos.Get(route[i]),new Rectangle(x,25,20,21));x+=28;if(i<route.Length-1)TextLine(g,"›",new Rectangle(x-5,27,10,18),10,Theme.Muted);}}
+    protected override void DrawChoice(Graphics g){TextLine(g,title,new Rectangle(10,5,Width-20,24),12,Color.White,true);int x=12;for(int i=0;i<route.Length;i++){TyreArt.Draw(g,route[i],new Rectangle(x,25,20,21));x+=28;if(i<route.Length-1)TextLine(g,"›",new Rectangle(x-5,27,10,18),10,Theme.Muted);}}
 }
 public class TyreTile:GameChoice {
     public string Code,Caption;
     public TyreTile(string code,string caption){Code=code;Caption=caption;AccessibleName=caption+" / "+TyrePhotos.Name(code);}
-    protected override void DrawChoice(Graphics g){if(Height<70){Theme.ImageFit(g,TyrePhotos.Get(Code),new Rectangle(4,3,Math.Max(16,Width-24),Height-6));TextLine(g,Code,new Rectangle(Width-23,3,20,Height-6),12,TyrePhotos.ColorFor(Code),true);return;}int photoHeight=Height-48;Theme.ImageFit(g,TyrePhotos.Get(Code),new Rectangle(9,22,Width-18,photoHeight));TextLine(g,Caption,new Rectangle(7,3,Width-14,20),10,Theme.Muted);using(var b=new SolidBrush(TyrePhotos.ColorFor(Code)))g.FillRectangle(b,Width/2-12,Height-25,24,2);TextLine(g,TyrePhotos.Name(Code),new Rectangle(5,Height-23,Width-10,22),11,Color.White,true);}
+    protected override void DrawChoice(Graphics g){if(Height<70){TyreArt.Draw(g,Code,new Rectangle(4,3,Math.Max(16,Width-24),Height-6));TextLine(g,Code,new Rectangle(Width-23,3,20,Height-6),12,TyrePhotos.ColorFor(Code),true);return;}int photoHeight=Height-48;TyreArt.Draw(g,Code,new Rectangle(9,22,Width-18,photoHeight));TextLine(g,Caption,new Rectangle(7,3,Width-14,20),10,Theme.Muted);using(var b=new SolidBrush(TyrePhotos.ColorFor(Code)))g.FillRectangle(b,Width/2-12,Height-25,24,2);TextLine(g,TyrePhotos.Name(Code),new Rectangle(5,Height-23,Width-10,22),11,Color.White,true);}
 }
 public class StrategyOverlay:GameOverlay {
     readonly Career state;readonly Person[] drivers;readonly Plan[] plans=new Plan[2];

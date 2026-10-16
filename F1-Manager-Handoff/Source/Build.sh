@@ -33,6 +33,6 @@ args+=("-resource:$source_dir/assets/tyres/credits.json,tyrecredits")
 args+=("-resource:$source_dir/assets/teams/credits.json,teamcredits")
 args+=("-resource:$source_dir/assets/credits.json,credits" "-resource:$source_dir/assets/drivers/credits.json,drivercredits")
 args+=("-resource:$source_dir/assets/maps/circuits.json,circuitmaps" "-resource:$source_dir/assets/maps/credits.json,mapcredits" "-resource:$source_dir/assets/maps/LICENSE.txt,maplicense")
-for file in Models Data CarModel Research Powertrain RaceDirector RaceUI TrackMaps StartupPresentation Patch251Tests Patch25Tests WeatherModel EngineeringTests ResearchTests Patch242Tests Engine UI Workflow Shell FrameClock SliderInput DevelopmentUI ContractUI Presentations StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
+for file in Models Data CarModel Research Powertrain RaceDirector RaceUI TrackMaps TyreArt StartupPresentation Patch252Tests Patch251Tests Patch25Tests WeatherModel EngineeringTests ResearchTests Patch242Tests Engine UI Workflow Shell FrameClock SliderInput DevelopmentUI ContractUI Presentations StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
 "${compiler[@]}" "${args[@]}"
 printf 'Built: %s/F1Manager.exe\n' "$output_dir"

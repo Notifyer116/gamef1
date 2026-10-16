@@ -32,7 +32,7 @@ $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\parts\credits.json')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\maps\circuits.json') + ',circuitmaps')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\maps\credits.json') + ',mapcredits')
 $taskArgs += ('/resource:' + (Join-Path $taskSource 'assets\maps\LICENSE.txt') + ',maplicense')
-foreach ($taskFile in @('Models.cs','Data.cs','CarModel.cs','Research.cs','Powertrain.cs','RaceDirector.cs','RaceUI.cs','TrackMaps.cs','StartupPresentation.cs','Patch251Tests.cs','Patch25Tests.cs','WeatherModel.cs','EngineeringTests.cs','ResearchTests.cs','Patch242Tests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','FrameClock.cs','SliderInput.cs','DevelopmentUI.cs','ContractUI.cs','Presentations.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
+foreach ($taskFile in @('Models.cs','Data.cs','CarModel.cs','Research.cs','Powertrain.cs','RaceDirector.cs','RaceUI.cs','TrackMaps.cs','TyreArt.cs','StartupPresentation.cs','Patch252Tests.cs','Patch251Tests.cs','Patch25Tests.cs','WeatherModel.cs','EngineeringTests.cs','ResearchTests.cs','Patch242Tests.cs','Engine.cs','UI.cs','Workflow.cs','Shell.cs','FrameClock.cs','SliderInput.cs','DevelopmentUI.cs','ContractUI.cs','Presentations.cs','StrategyUI.cs','UITests.cs','Program.cs','AssemblyInfo.cs')) { $taskArgs += (Join-Path $taskSource $taskFile) }
 & 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe' @taskArgs
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed' }
 Write-Output ('Built: ' + (Join-Path $taskOutput 'F1Manager.exe'))
