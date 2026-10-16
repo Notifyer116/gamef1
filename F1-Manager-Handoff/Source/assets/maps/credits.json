@@ -1,0 +1,147 @@
+{
+  "source": "bacinger/f1-circuits",
+  "commit": "394d8fbe70ef2c0b0c8d23ff7bee61fa09606055",
+  "license": "MIT / Copyright (c) 2019-2025 Tomislav Bacinger",
+  "changes": "Coordinates retained without simplification. Geographic centerlines projected with longitude*cos(mean latitude), latitude, uniform scale and translation for screen display. No invented corners.",
+  "scope": "Cartographic circuit centerlines, not a surveyed engineering plan; dataset dates and layouts are described by its source.",
+  "circuits": [
+    {
+      "id": "au-1953",
+      "name": "Albert Park Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/au-1953.geojson",
+      "source_sha256": "a686ec41ebbc1ca6f9c8e24c2c4bd0a2e1743d0cff730aaa26479059abd99ee5"
+    },
+    {
+      "id": "cn-2004",
+      "name": "Shanghai International Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/cn-2004.geojson",
+      "source_sha256": "5cbf74478ccf3422dcc8085adde5582d9a393b572b5a038ecb5c9d80d0f8baa7"
+    },
+    {
+      "id": "jp-1962",
+      "name": "Suzuka International Racing Course",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/jp-1962.geojson",
+      "source_sha256": "14419e615c3805ac74547de107ddb46872be0697bf279e2254130d495f086eee"
+    },
+    {
+      "id": "us-2022",
+      "name": "Miami International Autodrome",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/us-2022.geojson",
+      "source_sha256": "6081f7e67221df77a20e3c9e1ed226b008ec06c1ce7501fc10bcaf9e3a11d0c7"
+    },
+    {
+      "id": "ca-1978",
+      "name": "Circuit Gilles-Villeneuve",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/ca-1978.geojson",
+      "source_sha256": "8ae58f4f6c32dc1b5f0df475bc3f6ef6441c63838e3ead4fd38299e2dc6cb5e6"
+    },
+    {
+      "id": "mc-1929",
+      "name": "Circuit de Monaco",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/mc-1929.geojson",
+      "source_sha256": "daf184fc7d0948cadd10ce9428ba87b5462d9df6e33daec7b6f9aad235dc879e"
+    },
+    {
+      "id": "es-1991",
+      "name": "Circuit de Barcelona-Catalunya",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/es-1991.geojson",
+      "source_sha256": "739784fa7fe51e38040b7a30a21fe5288564f8901a87fbb27c8cc22462a05c29"
+    },
+    {
+      "id": "at-1969",
+      "name": "Red Bull Ring",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/at-1969.geojson",
+      "source_sha256": "6d84ffac3a212aed8bedd6513535b1cffb1ff2586e055f4921b7f8cd4c334ec3"
+    },
+    {
+      "id": "gb-1948",
+      "name": "Silverstone Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/gb-1948.geojson",
+      "source_sha256": "1e526462a785f15acb6bf9af2fefa7a1b4521e665bfbe663d58539516ba9ea68"
+    },
+    {
+      "id": "be-1925",
+      "name": "Circuit de Spa-Francorchamps",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/be-1925.geojson",
+      "source_sha256": "b867de9cc8364cc9b545a044377a56a697b8db77823c849c1a1c03760a943381"
+    },
+    {
+      "id": "hu-1986",
+      "name": "Hungaroring",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/hu-1986.geojson",
+      "source_sha256": "f822ff317874776d37d15970723f6007b463ab04c25ef5ce8ecb651c5478ee0d"
+    },
+    {
+      "id": "nl-1948",
+      "name": "Circuit Zandvoort",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/nl-1948.geojson",
+      "source_sha256": "4f639dad939d1fd87514695a91f3d0926feb0a72ec90af557a3b1209023c0215"
+    },
+    {
+      "id": "it-1922",
+      "name": "Autodromo Nazionale Monza",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/it-1922.geojson",
+      "source_sha256": "8b0758ef5a52bb9360c7673d45e0fbea6f29f7349486c5acbb2fe9aa340cb495"
+    },
+    {
+      "id": "es-2026",
+      "name": "Circuito de Madring",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/es-2026.geojson",
+      "source_sha256": "b362021622d76cd4600dd8d1e825224689ee7d9a98b0d07e39726b65c3b4def1"
+    },
+    {
+      "id": "az-2016",
+      "name": "Baku City Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/az-2016.geojson",
+      "source_sha256": "778230a47bee57c5eebb9d5b48143eadceff92603fd6035551e57f165862fd4b"
+    },
+    {
+      "id": "bh-2002",
+      "name": "Bahrain International Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/bh-2002.geojson",
+      "source_sha256": "6bac0f8f1f870faedb0cda06f04f6de3e98445d5b27f32c351bdddae105c3864"
+    },
+    {
+      "id": "sg-2008",
+      "name": "Marina Bay Street Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/sg-2008.geojson",
+      "source_sha256": "aa9584b50acffaabed7a06b5c0baa37fab38f0c70ad3c5ebba27706f3371bf9c"
+    },
+    {
+      "id": "us-2012",
+      "name": "Circuit of the Americas",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/us-2012.geojson",
+      "source_sha256": "199621d61cf0b50429fc9fcf1a8dabf016df453e33bf64299a651e1acad7e158"
+    },
+    {
+      "id": "mx-1962",
+      "name": "Aut\u00f3dromo Hermanos Rodr\u00edguez",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/mx-1962.geojson",
+      "source_sha256": "c552fb24debdb6f8381b70da1eec02c6595d870a4abf9f87b582dbd3bac2eb06"
+    },
+    {
+      "id": "br-1940",
+      "name": "Aut\u00f3dromo Jos\u00e9 Carlos Pace - Interlagos",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/br-1940.geojson",
+      "source_sha256": "e650e59b876af7c455ec3222e0801b5aab008ed858c71bf6bc84e7af6d6f2bba"
+    },
+    {
+      "id": "us-2023",
+      "name": "Las Vegas Street Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/us-2023.geojson",
+      "source_sha256": "bebd86828c5016ede9d6b1133f3f8fbb8301e357018bb551d2514a621803d29d"
+    },
+    {
+      "id": "qa-2004",
+      "name": "Losail International Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/qa-2004.geojson",
+      "source_sha256": "961a8c50ce500ed83446ce32e5947ce594706a7d8d7ae4fcffc60b78a38f822b"
+    },
+    {
+      "id": "ae-2009",
+      "name": "Yas Marina Circuit",
+      "source": "https://github.com/bacinger/f1-circuits/blob/394d8fbe70ef2c0b0c8d23ff7bee61fa09606055/circuits/ae-2009.geojson",
+      "source_sha256": "91ea23fc8bdcdbc1e23b007f99910c84fc0ff595663b3bf5c9954f54f882caa3"
+    }
+  ]
+}
