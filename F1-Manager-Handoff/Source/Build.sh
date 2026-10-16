@@ -28,9 +28,10 @@ for file in "$source_dir"/assets/tyres/*.png; do
   index="$(basename "$file" .png)"
   args+=("-resource:$file,tyre$index")
 done
+args+=("-resource:$source_dir/assets/parts/atlas.png,partatlas" "-resource:$source_dir/assets/parts/credits.json,partcredits")
 args+=("-resource:$source_dir/assets/tyres/credits.json,tyrecredits")
 args+=("-resource:$source_dir/assets/teams/credits.json,teamcredits")
 args+=("-resource:$source_dir/assets/credits.json,credits" "-resource:$source_dir/assets/drivers/credits.json,drivercredits")
-for file in Models Data CarModel Research WeatherModel EngineeringTests ResearchTests Patch242Tests Engine UI Workflow Shell FrameClock SliderInput DevelopmentUI ContractUI Presentations StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
+for file in Models Data CarModel Research Powertrain RaceDirector RaceUI Patch25Tests WeatherModel EngineeringTests ResearchTests Patch242Tests Engine UI Workflow Shell FrameClock SliderInput DevelopmentUI ContractUI Presentations StrategyUI UITests Program AssemblyInfo; do args+=("$source_dir/$file.cs"); done
 "${compiler[@]}" "${args[@]}"
 printf 'Built: %s/F1Manager.exe\n' "$output_dir"

@@ -1,0 +1,26 @@
+{
+  "file": "atlas.png",
+  "sha256": "22cf5e5bf1ce70493fb44177c5a479163bc41fde5de6b9375ca83cd5dfab2f9c",
+  "source": "Created for F1 Manager 2.5 with OpenAI image generation, 2026-10-16.",
+  "type": "AI-generated photorealistic fictional component illustrations; NOT photographs of real products.",
+  "rights": "Original game asset. No third-party manufacturer logo or affiliation.",
+  "layout": "3 columns, 5 rows; row-major key order. Rendered as individual cropped cards without altering the source atlas.",
+  "components": [
+    "front",
+    "rear",
+    "floor",
+    "diffuser",
+    "mono",
+    "nose",
+    "sidepods",
+    "suspF",
+    "suspR",
+    "brakes",
+    "radiators",
+    "ducts",
+    "gearbox",
+    "electronics",
+    "hydraulics"
+  ],
+  "note": "Direct Wikimedia Commons and specialist photo hosts were inaccessible during this build; a suitable sourced photograph set was not available."
+}

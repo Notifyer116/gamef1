@@ -16,9 +16,10 @@ public static class TyrePhotos {
     public static Image Get(string code){if(string.IsNullOrEmpty(code))return null;Image image;if(cache.TryGetValue(code,out image))return image;using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("tyre"+code)){if(stream!=null)using(var original=Image.FromStream(stream))image=new Bitmap(original);}cache[code]=image;return image;}
 }
 public abstract class GameChoice:Button {
-    double hover;bool hovered;public bool Selected;
+    double hover;bool hovered,selected;public bool Selected {get{return selected;}set{if(selected==value)return;selected=value;Invalidate();}}
     protected GameChoice(){SetStyle(ControlStyles.UserPaint|ControlStyles.AllPaintingInWmPaint|ControlStyles.OptimizedDoubleBuffer,true);BackColor=Color.FromArgb(34,34,34);ForeColor=Color.White;FlatStyle=FlatStyle.Flat;FlatAppearance.BorderSize=0;Cursor=Cursors.Hand;Font=new Font("Segoe UI",12,FontStyle.Regular,GraphicsUnit.Pixel);FrameClock.Frame+=Animate;MouseEnter+=(o,e)=>hovered=true;MouseLeave+=(o,e)=>hovered=false;}
     void Animate(double dt){double next=FrameClock.Approach(hover,hovered&&Enabled?1:0,dt);if(next==hover)return;hover=next;Invalidate();}
+    protected override void OnPaintBackground(PaintEventArgs e){e.Graphics.Clear(Parent==null?Theme.Card:Parent.BackColor);}
     protected override void OnPaint(PaintEventArgs e){var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;using(var path=Theme.Round(new Rectangle(1,1,Width-3,Height-3),10))using(var b=new SolidBrush(Theme.Mix(Selected?Color.FromArgb(65,30,37):BackColor,Selected?Color.FromArgb(83,35,44):Color.FromArgb(48,48,48),hover)))using(var pen=new Pen(Selected?Theme.Red:Theme.Border,Selected?2:1)){g.FillPath(b,path);g.DrawPath(pen,path);}DrawChoice(g);if(Focused)using(var p=new Pen(Color.FromArgb(100,Color.White)))using(var path=Theme.Round(new Rectangle(4,4,Width-9,Height-9),8))g.DrawPath(p,path);}
     protected abstract void DrawChoice(Graphics g);
     protected void TextLine(Graphics g,string text,Rectangle rect,int size,Color color,bool bold=false){using(var font=new Font("Segoe UI",size,bold?FontStyle.Bold:FontStyle.Regular,GraphicsUnit.Pixel))TextRenderer.DrawText(g,text,font,rect,color,TextFormatFlags.VerticalCenter|TextFormatFlags.EndEllipsis|TextFormatFlags.SingleLine);}
@@ -32,7 +33,7 @@ public class StrategyTile:GameChoice {
 public class TyreTile:GameChoice {
     public string Code,Caption;
     public TyreTile(string code,string caption){Code=code;Caption=caption;AccessibleName=caption+" / "+TyrePhotos.Name(code);}
-    protected override void DrawChoice(Graphics g){int photoHeight=Height-48;Theme.ImageFit(g,TyrePhotos.Get(Code),new Rectangle(9,22,Width-18,photoHeight));TextLine(g,Caption,new Rectangle(7,3,Width-14,20),10,Theme.Muted);using(var b=new SolidBrush(TyrePhotos.ColorFor(Code)))g.FillRectangle(b,Width/2-12,Height-25,24,2);TextLine(g,TyrePhotos.Name(Code),new Rectangle(5,Height-23,Width-10,22),11,Color.White,true);}
+    protected override void DrawChoice(Graphics g){if(Height<70){Theme.ImageFit(g,TyrePhotos.Get(Code),new Rectangle(4,3,Math.Max(16,Width-24),Height-6));TextLine(g,Code,new Rectangle(Width-23,3,20,Height-6),12,TyrePhotos.ColorFor(Code),true);return;}int photoHeight=Height-48;Theme.ImageFit(g,TyrePhotos.Get(Code),new Rectangle(9,22,Width-18,photoHeight));TextLine(g,Caption,new Rectangle(7,3,Width-14,20),10,Theme.Muted);using(var b=new SolidBrush(TyrePhotos.ColorFor(Code)))g.FillRectangle(b,Width/2-12,Height-25,24,2);TextLine(g,TyrePhotos.Name(Code),new Rectangle(5,Height-23,Width-10,22),11,Color.White,true);}
 }
 public class StrategyOverlay:GameOverlay {
     readonly Career state;readonly Person[] drivers;readonly Plan[] plans=new Plan[2];
